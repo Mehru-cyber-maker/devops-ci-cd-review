@@ -1,0 +1,3 @@
+Control,Visible evidence,Observed result,Implication
+Unauthenticated producer claim,Matching fictional builder/source and artifact declarations,PASS; 10/10 checks,Agreement cannot authenticate the producer
+Omitted critical finding,Clean scan record; an out-of-band synthetic label says a finding was omitted,PASS; 10/10 checks,The checker cannot discover findings absent from its input

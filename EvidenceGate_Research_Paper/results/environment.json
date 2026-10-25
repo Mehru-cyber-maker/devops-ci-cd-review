@@ -1,0 +1,28 @@
+{
+  "measured_at_utc": "2026-10-25T14:18:03.793609Z",
+  "fixed_assessment_time": "2026-10-25T09:00:00Z",
+  "tool_version": "0.1.0",
+  "evaluated_git_commit": "fba5a6ca8e264372a4556302bb8d9cae21002ab8",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "visible_logical_cpus": 5,
+  "affinity_cpus": 5,
+  "clock": "perf_counter_ns",
+  "clock_resolution_seconds": 1e-09,
+  "execution_context": "Shared cloud environment; no CPU isolation, memory profiling, or dedicated-machine control.",
+  "source_sha256": {
+    "evidencegate/evidencegate/__init__.py": "82599e213ef9a098082a0c3e07697f63c11486e9c1aef5ec8d5bfcc7a9e76057",
+    "evidencegate/evidencegate/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "evidencegate/evidencegate/adapters.py": "fd2184d5428a37d49bbf2bddfd2170e395cd3ad3c18eb7c67c7d0872bd75a816",
+    "evidencegate/evidencegate/benchmark.py": "729977d348ad930bea778d4410116396dd72e387470a4aff9382143250b71d1d",
+    "evidencegate/evidencegate/cli.py": "c7e6bad2448491cb3091e550a17a967fbf3f446361c9b9346fa3010c559c2f12",
+    "evidencegate/evidencegate/core.py": "7026c77424f05dbd07fade8e1bf8dd7151e7592776ad513a546d165299640d61",
+    "evidencegate/evidencegate/demo.py": "8fe81ee8a49acc8260544ab2e8f5f5abb3e1b11002bce759cab1ff2f140a95c5",
+    "evidencegate/evidencegate/reporting.py": "ac76bcb6c74c8f1f2c162fce84db5f6e371bb61165a1c8ba07af0249d3b43a6a",
+    "evidencegate/evidencegate/server.py": "f9ced94f8c2317459ffac2b293e602731cee8a9d4dac5c23126006b51aeaac81",
+    "evidencegate/tests/test_core.py": "208515448f8ae8b7d3675a470c7dfb67ed90f7432ed83b0aac686cbfe0ee51df",
+    "evidencegate/tests/test_interfaces.py": "288e7b39d9701f2dd3c42fa159bfc14c09ab8f420737c75a3f240d7e52b514f4"
+  }
+}

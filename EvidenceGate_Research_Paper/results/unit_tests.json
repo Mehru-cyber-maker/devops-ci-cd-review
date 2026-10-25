@@ -1,0 +1,12 @@
+{
+  "tests_run": 31,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "groups": {
+    "CoreTests": 19,
+    "TrivyTests": 5,
+    "CommandTests": 1,
+    "DashboardTests": 6
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "browser": "Chromium 154.0.8037.57",
+  "desktop_width": 1440,
+  "mobile_width": 390,
+  "tests": [
+    {
+      "test": "clean_decision",
+      "result": "PASS",
+      "expected_decision": "PASS"
+    },
+    {
+      "test": "mismatch_decision",
+      "result": "PASS",
+      "expected_decision": "BLOCK"
+    },
+    {
+      "test": "stale_decision",
+      "result": "PASS",
+      "expected_decision": "BLOCK"
+    },
+    {
+      "test": "vulnerable_decision",
+      "result": "PASS",
+      "expected_decision": "BLOCK"
+    },
+    {
+      "test": "failed_check_filter",
+      "result": "PASS"
+    },
+    {
+      "test": "json_download",
+      "result": "PASS"
+    },
+    {
+      "test": "csv_download",
+      "result": "PASS"
+    },
+    {
+      "test": "duplicate_key_upload_rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "browser_artifact_hash",
+      "result": "PASS"
+    },
+    {
+      "test": "mobile_layout_and_clean_check",
+      "result": "PASS"
+    }
+  ],
+  "passed": 10,
+  "javascript_errors": [],
+  "interpretation": "Automated interface checks, not a user study or production deployment."
+}

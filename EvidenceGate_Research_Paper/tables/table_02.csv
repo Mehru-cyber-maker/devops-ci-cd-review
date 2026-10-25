@@ -1,0 +1,11 @@
+Rule,Checked property,Rejection condition
+EG001,Provenance structure,Missing or unsupported statement
+EG002,Provenance artifact,Selected release digest absent
+EG003,Declared builder,Builder absent or not allowlisted
+EG004,Declared source,"Expected URI/commit absent, different, or conflicting"
+EG005,SBOM structure,Missing or unsupported inventory
+EG006,SBOM root artifact,"SHA-256 absent, different, or conflicting"
+EG007,Scan structure,"Missing, malformed, or declared partial scan"
+EG008,Scan artifact,Subject digest differs from selected release
+EG009,Scan timestamp,"Invalid, stale, or implausibly future time"
+EG010,Vulnerability policy,Blocked severity present or scan invalid

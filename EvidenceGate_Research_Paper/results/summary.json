@@ -1,0 +1,158 @@
+{
+  "datasets": {
+    "fixture27": {
+      "cases": 27,
+      "valid": 5,
+      "faulty": 22
+    },
+    "factorial64": {
+      "cases": 64,
+      "valid": 1,
+      "faulty": 63
+    }
+  },
+  "metrics": [
+    {
+      "dataset": "fixture27",
+      "mode": "presence_only",
+      "true_blocks": 3,
+      "false_accepts": 19,
+      "false_blocks": 0,
+      "true_accepts": 5,
+      "precision": 1.0,
+      "recall": 0.13636363636363635,
+      "f1": 0.24
+    },
+    {
+      "dataset": "fixture27",
+      "mode": "without_artifact_binding",
+      "true_blocks": 17,
+      "false_accepts": 5,
+      "false_blocks": 0,
+      "true_accepts": 5,
+      "precision": 1.0,
+      "recall": 0.7727272727272727,
+      "f1": 0.8717948717948718
+    },
+    {
+      "dataset": "fixture27",
+      "mode": "evidencegate",
+      "true_blocks": 22,
+      "false_accepts": 0,
+      "false_blocks": 0,
+      "true_accepts": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "dataset": "factorial64",
+      "mode": "presence_only",
+      "true_blocks": 0,
+      "false_accepts": 63,
+      "false_blocks": 0,
+      "true_accepts": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "factorial64",
+      "mode": "without_artifact_binding",
+      "true_blocks": 56,
+      "false_accepts": 7,
+      "false_blocks": 0,
+      "true_accepts": 1,
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1": 0.9411764705882353
+    },
+    {
+      "dataset": "factorial64",
+      "mode": "evidencegate",
+      "true_blocks": 63,
+      "false_accepts": 0,
+      "false_blocks": 0,
+      "true_accepts": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "unit_tests": {
+    "tests_run": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "groups": {
+      "CoreTests": 19,
+      "TrivyTests": 5,
+      "CommandTests": 1,
+      "DashboardTests": 6
+    }
+  },
+  "timing": [
+    {
+      "records_each": 0,
+      "input_bytes": 1462,
+      "repeats": 100,
+      "warmups": 10,
+      "parse_ms_median": 0.012719000000000001,
+      "parse_ms_q1": 0.012042999999999998,
+      "parse_ms_q3": 0.014617,
+      "evaluate_ms_median": 0.015238,
+      "evaluate_ms_q1": 0.014422,
+      "evaluate_ms_q3": 0.016677499999999998,
+      "parse_and_evaluate_ms_median": 0.028152,
+      "parse_and_evaluate_ms_q1": 0.026816,
+      "parse_and_evaluate_ms_q3": 0.032116500000000006
+    },
+    {
+      "records_each": 100,
+      "input_bytes": 13740,
+      "repeats": 100,
+      "warmups": 10,
+      "parse_ms_median": 0.10922000000000001,
+      "parse_ms_q1": 0.10802300000000001,
+      "parse_ms_q3": 0.117144,
+      "evaluate_ms_median": 0.063781,
+      "evaluate_ms_q1": 0.0617655,
+      "evaluate_ms_q3": 0.07529825,
+      "parse_and_evaluate_ms_median": 0.1759855,
+      "parse_and_evaluate_ms_q1": 0.17050949999999998,
+      "parse_and_evaluate_ms_q3": 0.22738775
+    },
+    {
+      "records_each": 1000,
+      "input_bytes": 126240,
+      "repeats": 100,
+      "warmups": 10,
+      "parse_ms_median": 1.1062029999999998,
+      "parse_ms_q1": 1.0304267500000002,
+      "parse_ms_q3": 1.20457925,
+      "evaluate_ms_median": 0.5503555,
+      "evaluate_ms_q1": 0.4928855,
+      "evaluate_ms_q3": 0.6319735,
+      "parse_and_evaluate_ms_median": 1.6880060000000001,
+      "parse_and_evaluate_ms_q1": 1.585519,
+      "parse_and_evaluate_ms_q3": 1.8436762500000001
+    },
+    {
+      "records_each": 10000,
+      "input_bytes": 1269240,
+      "repeats": 100,
+      "warmups": 10,
+      "parse_ms_median": 11.872968499999999,
+      "parse_ms_q1": 11.139065500000001,
+      "parse_ms_q3": 12.641624749999998,
+      "evaluate_ms_median": 5.5897505,
+      "evaluate_ms_q1": 5.25731775,
+      "evaluate_ms_q3": 5.991857249999999,
+      "parse_and_evaluate_ms_median": 17.515619,
+      "parse_and_evaluate_ms_q1": 16.407895,
+      "parse_and_evaluate_ms_q3": 18.721763250000002
+    }
+  ],
+  "design": "Controlled synthetic rule evaluation, not independent field validation.",
+  "timing_scope": "JSON parsing plus full in-memory evaluation; excludes I/O, hashing, scanning, signature verification, report serialization, network, and deployment."
+}

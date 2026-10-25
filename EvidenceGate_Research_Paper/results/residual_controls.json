@@ -1,0 +1,18 @@
+[
+  {
+    "control": "forged_consistent_claims",
+    "description": "All visible declarations match policy, but their claimed producer is not authenticated.",
+    "observed_decision": "PASS",
+    "checks_passed": 10,
+    "in_confusion_metrics": false,
+    "interpretation": "Outside the checker\u2019s observability; not a simulated real exploit."
+  },
+  {
+    "control": "omitted_critical_finding",
+    "description": "A synthetic external truth label says a critical finding exists, but the supplied scan omits it.",
+    "observed_decision": "PASS",
+    "checks_passed": 10,
+    "in_confusion_metrics": false,
+    "interpretation": "Outside the checker\u2019s observability; not a simulated real exploit."
+  }
+]

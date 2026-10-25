@@ -1,0 +1,7 @@
+Component,Size,Construction,Interpretation
+F27 functional suite,27 cases: 5 valid / 22 faulty,Existing seeded fixtures; seed 7,Known rule behavior
+F64 factorial suite,64 cases: 1 valid / 63 faulty,All combinations of six fault flags,Interactions and masking by other faults
+Residual trust controls,2 demonstrations,False external assumptions with consistent visible inputs,Unobservable conditions; excluded from metrics
+Software tests,31 unittest tests,"Core, adapter, CLI, and HTTP checks","Implementation behavior, not attack coverage"
+Browser scenarios,10 checks,Headless Chromium; desktop and mobile,"Interface behavior, not usability research"
+Timing experiment,400 retained observations,4 input sizes × 100 repetitions,In-memory parsing and checking cost

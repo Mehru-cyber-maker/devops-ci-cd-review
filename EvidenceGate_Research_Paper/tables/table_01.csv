@@ -1,0 +1,6 @@
+Approach,Primary role,Use in this study,Evaluation boundary
+SLSA / in-toto,Describe production and process claims,Supported raw provenance input,Structural and policy checks; no signature verification
+CycloneDX,Represent component inventories,SBOM input with root artifact hash,"Supported subset, not full schema conformance"
+Trivy,Report vulnerability findings,Optional native-report adapter,Adapter contract tests; no live scanner run
+Signature verification,Authenticate signed statements under a trust policy,External prerequisite for authentic evidence,Not implemented or benchmarked here
+EvidenceGate,Check joint evidence consistency and release policy,Prototype under evaluation,"Synthetic decisions, timing, and interface tests"

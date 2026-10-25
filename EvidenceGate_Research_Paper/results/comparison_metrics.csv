@@ -1,0 +1,7 @@
+dataset,mode,true_blocks,false_accepts,false_blocks,true_accepts,precision,recall,f1
+fixture27,presence_only,3,19,0,5,1.0,0.13636363636363635,0.24
+fixture27,without_artifact_binding,17,5,0,5,1.0,0.7727272727272727,0.8717948717948718
+fixture27,evidencegate,22,0,0,5,1.0,1.0,1.0
+factorial64,presence_only,0,63,0,1,,0.0,0.0
+factorial64,without_artifact_binding,56,7,0,1,1.0,0.8888888888888888,0.9411764705882353
+factorial64,evidencegate,63,0,0,1,1.0,1.0,1.0

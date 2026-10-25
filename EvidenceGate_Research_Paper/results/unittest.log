@@ -1,0 +1,36 @@
+test_benchmark_records_computed_confusion_counts (test_core.CoreTests.test_benchmark_records_computed_confusion_counts) ... ok
+test_case_insensitive_hex (test_core.CoreTests.test_case_insensitive_hex) ... ok
+test_component_hash_is_not_taken_from_nested_dependency (test_core.CoreTests.test_component_hash_is_not_taken_from_nested_dependency) ... ok
+test_conflicting_hashes_and_source_commits_block (test_core.CoreTests.test_conflicting_hashes_and_source_commits_block) ... ok
+test_consistent_records_pass_all_ten_rules (test_core.CoreTests.test_consistent_records_pass_all_ten_rules) ... ok
+test_each_missing_record_blocks (test_core.CoreTests.test_each_missing_record_blocks) ... ok
+test_every_labeled_mutation_and_deterministic_dataset (test_core.CoreTests.test_every_labeled_mutation_and_deterministic_dataset) ... ok
+test_forged_but_consistent_claims_remain_a_documented_limit (test_core.CoreTests.test_forged_but_consistent_claims_remain_a_documented_limit) ... ok
+test_future_clock_skew_boundary (test_core.CoreTests.test_future_clock_skew_boundary) ... ok
+test_hashing_changed_artifact_invalidates_all_bindings (test_core.CoreTests.test_hashing_changed_artifact_invalidates_all_bindings) ... ok
+test_known_vulnerability_does_not_disappear_on_wrong_artifact (test_core.CoreTests.test_known_vulnerability_does_not_disappear_on_wrong_artifact) ... ok
+test_malformed_nested_types_block_without_crashing (test_core.CoreTests.test_malformed_nested_types_block_without_crashing) ... ok
+test_naive_scan_time_is_rejected_and_offset_is_accepted (test_core.CoreTests.test_naive_scan_time_is_rejected_and_offset_is_accepted) ... ok
+test_policy_unknown_fields_and_boolean_hours_are_errors (test_core.CoreTests.test_policy_unknown_fields_and_boolean_hours_are_errors) ... ok
+test_raw_dsse_envelope_is_not_silently_trusted (test_core.CoreTests.test_raw_dsse_envelope_is_not_silently_trusted) ... ok
+test_reports_escape_untrusted_identifiers (test_core.CoreTests.test_reports_escape_untrusted_identifiers) ... ok
+test_reused_clean_scan_passes_ablation_but_full_check_blocks (test_core.CoreTests.test_reused_clean_scan_passes_ablation_but_full_check_blocks) ... ok
+test_scan_at_maximum_age_is_accepted (test_core.CoreTests.test_scan_at_maximum_age_is_accepted) ... ok
+test_strict_json_rejects_duplicate_keys_and_nonfinite_constants (test_core.CoreTests.test_strict_json_rejects_duplicate_keys_and_nonfinite_constants) ... ok
+test_empty_or_nonpackage_results_do_not_imply_clean_scan (test_core.TrivyTests.test_empty_or_nonpackage_results_do_not_imply_clean_scan) ... ok
+test_image_id_cannot_substitute_for_manifest_digest (test_core.TrivyTests.test_image_id_cannot_substitute_for_manifest_digest) ... ok
+test_import_preserves_manifest_digest_and_finding (test_core.TrivyTests.test_import_preserves_manifest_digest_and_finding) ... ok
+test_missing_vulnerabilities_field_is_clean_only_under_import_confirmation (test_core.TrivyTests.test_missing_vulnerabilities_field_is_clean_only_under_import_confirmation) ... ok
+test_wrong_manifest_digest_rejected (test_core.TrivyTests.test_wrong_manifest_digest_rejected) ... ok
+test_cli_pass_block_and_invalid_input_exit_codes (test_interfaces.CommandTests.test_cli_pass_block_and_invalid_input_exit_codes) ... ok
+test_cross_origin_request_is_rejected (test_interfaces.DashboardTests.test_cross_origin_request_is_rejected) ... ok
+test_duplicate_keys_in_uploaded_file_remain_detectable (test_interfaces.DashboardTests.test_duplicate_keys_in_uploaded_file_remain_detectable) ... ok
+test_local_demo_can_be_evaluated (test_interfaces.DashboardTests.test_local_demo_can_be_evaluated) ... ok
+test_malformed_json_and_media_type (test_interfaces.DashboardTests.test_malformed_json_and_media_type) ... ok
+test_path_traversal_is_not_served (test_interfaces.DashboardTests.test_path_traversal_is_not_served) ... ok
+test_unexpected_host_is_rejected (test_interfaces.DashboardTests.test_unexpected_host_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.535s
+
+OK

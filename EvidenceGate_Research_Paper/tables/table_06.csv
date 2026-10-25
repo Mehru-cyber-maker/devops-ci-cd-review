@@ -1,0 +1,6 @@
+Test group,Count,Outcome,What was exercised
+Core and reports,19,19 passed,"Rules, malformed data, time boundaries, escaping, benchmark contract"
+Trivy adapter,5,5 passed,"Manifest binding, missing results, severity preservation; fixtures only"
+CLI integration,1,1 passed,"PASS, BLOCK, and input-error exit codes within one test"
+Dashboard HTTP,6,6 passed,"API evaluation, origin/host checks, duplicate keys, path/media handling"
+Browser scenarios,10,10 passed,"Four decisions, filter, two exports, invalid upload, hashing, mobile layout"
