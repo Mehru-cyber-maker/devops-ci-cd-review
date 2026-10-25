@@ -1,0 +1,2 @@
+All demo inputs are synthetic. No software was built or scanned.
+Timestamps are generated for the demo, not measurements of an actual scan.

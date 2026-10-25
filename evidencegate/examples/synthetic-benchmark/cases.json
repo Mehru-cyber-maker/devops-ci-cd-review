@@ -1,0 +1,2432 @@
+[
+  {
+    "id": "clean",
+    "kind": "valid",
+    "expected": "PASS",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "low_severity",
+    "kind": "valid",
+    "expected": "PASS",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": [
+          {
+            "id": "SYNTHETIC-001",
+            "package": "example-package",
+            "severity": "LOW"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "medium_severity",
+    "kind": "valid",
+    "expected": "PASS",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": [
+          {
+            "id": "SYNTHETIC-001",
+            "package": "example-package",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "multiple_subjects",
+    "kind": "valid",
+    "expected": "PASS",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          },
+          {
+            "name": "other-artifact",
+            "digest": {
+              "sha256": "d23f0824128b2f330c5c7fd0a6a3a4506513270e269e0d37f2a74de452e6b438"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "additional_dependency",
+    "kind": "valid",
+    "expected": "PASS",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              },
+              {
+                "uri": "git+https://example.org/another.git",
+                "digest": {
+                  "gitCommit": "2222222222222222222222222222222222222222"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "missing_provenance",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": null,
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "missing_sbom",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": null,
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "missing_scan",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": null
+    }
+  },
+  {
+    "id": "empty_sbom",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {},
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "scan_not_object",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": []
+    }
+  },
+  {
+    "id": "reused_provenance",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "d23f0824128b2f330c5c7fd0a6a3a4506513270e269e0d37f2a74de452e6b438"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "reused_sbom",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "d23f0824128b2f330c5c7fd0a6a3a4506513270e269e0d37f2a74de452e6b438"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "reused_scan",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "d23f0824128b2f330c5c7fd0a6a3a4506513270e269e0d37f2a74de452e6b438"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "unapproved_builder",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/unapproved"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "wrong_source",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "2222222222222222222222222222222222222222"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "stale_scan",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-22T08:00:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "future_scan",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T09:06:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "critical_vulnerability",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": [
+          {
+            "id": "SYNTHETIC-001",
+            "package": "example-package",
+            "severity": "CRITICAL"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "high_vulnerability",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": [
+          {
+            "id": "SYNTHETIC-001",
+            "package": "example-package",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "partial_scan",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "partial",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "unknown_severity_label",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": [
+          {
+            "id": "SYNTHETIC-001",
+            "package": "example-package",
+            "severity": "INVALID"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "unsupported_sbom",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.4",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "unsupported_provenance",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "unsupported",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "missing_artifact_hash",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": []
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "conflicting_artifact_hashes",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              },
+              {
+                "alg": "SHA-256",
+                "content": "d23f0824128b2f330c5c7fd0a6a3a4506513270e269e0d37f2a74de452e6b438"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "missing_scan_date",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  },
+  {
+    "id": "conflicting_source",
+    "kind": "fault",
+    "expected": "BLOCK",
+    "data_origin": "synthetic mutation, not a real incident",
+    "bundle": {
+      "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+      "policy": {
+        "schema_version": 1,
+        "allowed_builders": [
+          "https://example.org/builders/student-demo/v1"
+        ],
+        "expected_source": {
+          "uri": "git+https://example.org/student/demo.git",
+          "commit": "1111111111111111111111111111111111111111"
+        },
+        "max_scan_age_hours": 72,
+        "blocked_severities": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      },
+      "provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "artifact.txt",
+            "digest": {
+              "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://example.org/build-types/student-demo/v1",
+            "externalParameters": {},
+            "resolvedDependencies": [
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "1111111111111111111111111111111111111111"
+                }
+              },
+              {
+                "uri": "git+https://example.org/student/demo.git",
+                "digest": {
+                  "gitCommit": "3333333333333333333333333333333333333333"
+                }
+              }
+            ]
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://example.org/builders/student-demo/v1"
+            }
+          }
+        }
+      },
+      "sbom": {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.6",
+        "version": 1,
+        "metadata": {
+          "component": {
+            "type": "file",
+            "name": "artifact.txt",
+            "hashes": [
+              {
+                "alg": "SHA-256",
+                "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+              }
+            ]
+          }
+        },
+        "components": [
+          {
+            "type": "library",
+            "name": "synthetic-example",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "scan": {
+        "schema": "evidencegate.scan/v1",
+        "subject": {
+          "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        },
+        "scanner": {
+          "name": "synthetic-example-scanner",
+          "version": "demo-1"
+        },
+        "scanned_at": "2026-10-25T08:50:00Z",
+        "status": "complete",
+        "vulnerabilities": []
+      }
+    }
+  }
+]

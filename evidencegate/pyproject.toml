@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student-evidencegate"
+version = "0.1.0"
+description = "Offline consistency checks for artifact-bound CI/CD security evidence"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+evidencegate = "evidencegate.cli:main"
+
+[tool.setuptools.package-data]
+evidencegate = ["web/*.html", "web/*.css", "web/*.js"]
+
+[tool.setuptools.packages.find]
+include = ["evidencegate*"]

@@ -1,0 +1,31 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "name": "artifact.txt",
+      "digest": {
+        "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+      }
+    }
+  ],
+  "predicateType": "https://slsa.dev/provenance/v1",
+  "predicate": {
+    "buildDefinition": {
+      "buildType": "https://example.org/build-types/student-demo/v1",
+      "externalParameters": {},
+      "resolvedDependencies": [
+        {
+          "uri": "git+https://example.org/student/demo.git",
+          "digest": {
+            "gitCommit": "1111111111111111111111111111111111111111"
+          }
+        }
+      ]
+    },
+    "runDetails": {
+      "builder": {
+        "id": "https://example.org/builders/student-demo/v1"
+      }
+    }
+  }
+}

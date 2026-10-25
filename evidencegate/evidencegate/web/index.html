@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvidenceGate · Release evidence checker</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="EvidenceGate home"><span class="brand-icon">e.</span><span>EvidenceGate<small>STUDENT RESEARCH PROTOTYPE</small></span></a>
+  <p class="nav-label">WORKSPACE</p><a class="nav-current" href="#workspace"><span>◈</span> Release evidence</a>
+  <div class="side-info"><p class="nav-label">WHAT GETS CHECKED</p>
+    <ol><li><span>01</span> Artifact identity</li><li><span>02</span> Build &amp; source claims</li><li><span>03</span> Scan age &amp; findings</li></ol>
+  </div>
+  <div class="local-card"><span class="local-dot"></span> Local workspace<p>Your files stay on this computer. No external services are contacted.</p></div>
+  <p class="side-footer">Version 0.1 · Offline analysis</p>
+</aside>
+<main id="workspace">
+  <header><p class="eyebrow">WORKSPACE <span>/</span> RELEASE EVIDENCE</p><span class="prototype">RESEARCH PROTOTYPE</span></header>
+  <section class="intro"><div><h1>Check release evidence.</h1><p>Check whether build records, an SBOM, and a vulnerability report<br class="desktop"> describe the same release and meet your policy.</p></div>
+    <div class="demo-controls"><label class="sr-only" for="scenario">Synthetic example</label><select id="scenario"><option value="clean">Clean example</option><option value="mismatch">Reused scan</option><option value="stale">Stale scan</option><option value="vulnerable">High-severity finding</option></select><button type="button" id="load-demo" class="secondary">Load example ↗</button></div>
+  </section>
+  <div class="notice"><span>i</span><p>This tool checks supplied claims. It does not verify signatures, scan software, or certify that a release is safe.</p></div>
+  <div id="error" role="alert" class="error" hidden></div>
+  <form id="check-form">
+    <section class="panel artifact-panel"><div class="section-heading"><span class="step">01</span><div><h2>Select the release</h2><p>Use an independently selected SHA-256 or hash a local artifact.</p></div><span id="demo-badge" class="tag" hidden>SYNTHETIC DATA</span></div>
+      <label for="digest" class="field-label">Expected artifact SHA-256</label><div class="digest-row"><input id="digest" name="digest" placeholder="64-character SHA-256 digest" autocomplete="off" spellcheck="false" required pattern="[a-fA-F0-9]{64}"><label class="file-button" for="artifact-file">Hash a file <span>＋</span></label><input type="file" id="artifact-file" class="sr-only"></div>
+      <p id="artifact-note" class="hint">For an OCI image, select the manifest digest. An archive hash and an image configuration ID are different identities.</p>
+    </section>
+    <section class="panel"><div class="section-heading"><span class="step">02</span><div><h2>Add security evidence</h2><p>Upload JSON records collected for this release.</p></div><span class="tag subtle">JSON · 8 MiB TOTAL</span></div>
+      <div class="evidence-grid">
+        <div class="upload-card"><span class="file-icon">P</span><h3>Build provenance</h3><p>in-toto Statement v1<br>SLSA provenance v1</p><label for="provenance-file" class="choose">Choose JSON <span>↑</span></label><input type="file" id="provenance-file" accept=".json,application/json" class="sr-only"><span id="provenance-name" class="file-name">No file selected</span></div>
+        <div class="upload-card"><span class="file-icon">B</span><h3>Software inventory</h3><p>CycloneDX 1.5 / 1.6<br>Root artifact hash required</p><label for="sbom-file" class="choose">Choose JSON <span>↑</span></label><input type="file" id="sbom-file" accept=".json,application/json" class="sr-only"><span id="sbom-name" class="file-name">No file selected</span></div>
+        <div class="upload-card"><span class="file-icon">S</span><h3>Vulnerability scan</h3><p>EvidenceGate scan v1<br>Use CLI import for Trivy</p><label for="scan-file" class="choose">Choose JSON <span>↑</span></label><input type="file" id="scan-file" accept=".json,application/json" class="sr-only"><span id="scan-name" class="file-name">No file selected</span></div>
+        <div class="upload-card"><span class="file-icon">✓</span><h3>Release policy</h3><p>Allowed builder &amp; source<br>Age and severity limits</p><label for="policy-file" class="choose">Choose JSON <span>↑</span></label><input type="file" id="policy-file" accept=".json,application/json" class="sr-only"><span id="policy-name" class="file-name">No file selected</span></div>
+      </div>
+      <div class="run-row"><p>10 checks <span>·</span> Explicit pass / block decision <span>·</span> Downloadable findings</p><button type="submit" id="run-check">Check evidence <span>→</span></button></div>
+    </section>
+  </form>
+  <section id="results" class="panel results" aria-live="polite" hidden>
+    <div class="result-heading"><div><p class="eyebrow">EVIDENCE ASSESSMENT</p><h2><span id="decision" class="decision"></span><span id="result-title"></span></h2><p id="result-summary"></p></div><div class="downloads"><button class="secondary" id="download-json" type="button">↓ JSON</button><button class="secondary" id="download-csv" type="button">↓ CSV</button></div></div>
+    <div class="table-tools"><h3>Findings &amp; next steps</h3><label><input type="checkbox" id="failed-only"> Failed checks only</label></div>
+    <div class="table-wrap"><table><thead><tr><th>RULE</th><th>STATUS</th><th>FINDING &amp; RECOMMENDED ACTION</th></tr></thead><tbody id="findings"></tbody></table></div>
+    <p class="hint result-limit">A passing result applies only to this policy and these supplied records. Authenticate evidence producers separately.</p>
+  </section>
+  <footer>EvidenceGate <span>·</span> A prototype for studying consistency in CI/CD security evidence.</footer>
+</main></body></html>

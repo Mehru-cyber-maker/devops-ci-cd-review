@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "allowed_builders": [
+    "https://example.org/builders/student-demo/v1"
+  ],
+  "expected_source": {
+    "uri": "git+https://example.org/student/demo.git",
+    "commit": "1111111111111111111111111111111111111111"
+  },
+  "max_scan_age_hours": 72,
+  "blocked_severities": [
+    "HIGH",
+    "CRITICAL"
+  ]
+}

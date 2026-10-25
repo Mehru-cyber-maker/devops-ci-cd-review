@@ -1,0 +1,16 @@
+# Example STEP only. This file is not an active GitHub Actions workflow.
+# Prerequisites: Python >=3.10, trusted evidence collection, external signature
+# verification, and independently selected release digest and policy.
+# Copy this step into your own job after configuring its paths and inputs.
+- name: Apply EvidenceGate release policy
+  working-directory: evidencegate
+  env:
+    RELEASE_SHA256: ${{ needs.build.outputs.manifest_sha256 }}
+  run: |
+    python -m evidencegate check \
+      --sha256 "$RELEASE_SHA256" \
+      --provenance ../collected/provenance.json \
+      --sbom ../collected/sbom.json \
+      --scan ../collected/scan.json \
+      --policy ../trusted-policy/release-policy.json \
+      --output-dir outputs/release-check

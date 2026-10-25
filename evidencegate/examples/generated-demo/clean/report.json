@@ -1,0 +1,106 @@
+{
+  "schema": "evidencegate.report/v1",
+  "tool_version": "0.1.0",
+  "assessed_at": "2026-10-25T09:00:00Z",
+  "artifact_sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7",
+  "decision": "PASS",
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10
+  },
+  "checks": [
+    {
+      "id": "EG001",
+      "category": "Provenance",
+      "status": "pass",
+      "message": "Supported SLSA v1 statement structure.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG002",
+      "category": "Artifact binding",
+      "status": "pass",
+      "message": "Provenance includes the selected artifact.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG003",
+      "category": "Provenance",
+      "status": "pass",
+      "message": "Declared builder is allowlisted.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG004",
+      "category": "Source",
+      "status": "pass",
+      "message": "Declared source URI and commit match policy.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG005",
+      "category": "SBOM",
+      "status": "pass",
+      "message": "Supported CycloneDX structure.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG006",
+      "category": "Artifact binding",
+      "status": "pass",
+      "message": "SBOM root component matches the selected artifact.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG007",
+      "category": "Scan",
+      "status": "pass",
+      "message": "Supported scan record with declared complete status.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG008",
+      "category": "Artifact binding",
+      "status": "pass",
+      "message": "Scan subject matches the selected artifact.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG009",
+      "category": "Freshness",
+      "status": "pass",
+      "message": "Declared scan time is within the 72-hour window.",
+      "action": "None required for this check."
+    },
+    {
+      "id": "EG010",
+      "category": "Vulnerabilities",
+      "status": "pass",
+      "message": "No supplied vulnerability violates the severity policy.",
+      "action": "None required for this check."
+    }
+  ],
+  "vulnerabilities": [],
+  "policy": {
+    "schema_version": 1,
+    "allowed_builders": [
+      "https://example.org/builders/student-demo/v1"
+    ],
+    "expected_source": {
+      "uri": "git+https://example.org/student/demo.git",
+      "commit": "1111111111111111111111111111111111111111"
+    },
+    "max_scan_age_hours": 72,
+    "blocked_severities": [
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  "limitations": [
+    "Checks consistency of supplied claims; does not verify signatures or producer identity.",
+    "Does not run a vulnerability scanner, inspect artifact behavior, or prove software is safe.",
+    "Timestamps, scan completeness, and source claims require a trusted collection process.",
+    "PASS means supplied evidence satisfies this policy; it is not a security certification."
+  ]
+}

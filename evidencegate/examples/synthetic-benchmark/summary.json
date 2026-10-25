@@ -1,0 +1,41 @@
+{
+  "dataset": "EvidenceGate synthetic mutations v1",
+  "seed": 7,
+  "assessed_at": "2026-10-25T09:00:00Z",
+  "cases": 27,
+  "valid_cases": 5,
+  "fault_cases": 22,
+  "repeats": 10,
+  "full_evaluator_median_ms": 0.013490499999999999,
+  "metrics": {
+    "presence_only": {
+      "true_blocks": 3,
+      "false_accepts": 19,
+      "false_blocks": 0,
+      "true_accepts": 5,
+      "precision": 1.0,
+      "recall": 0.13636363636363635,
+      "f1": 0.24
+    },
+    "without_artifact_binding": {
+      "true_blocks": 17,
+      "false_accepts": 5,
+      "false_blocks": 0,
+      "true_accepts": 5,
+      "precision": 1.0,
+      "recall": 0.7727272727272727,
+      "f1": 0.8717948717948718
+    },
+    "evidencegate": {
+      "true_blocks": 22,
+      "false_accepts": 0,
+      "false_blocks": 0,
+      "true_accepts": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "timing_scope": "In-memory full evaluation only; no file I/O, scanning, signature verification, or baseline timing.",
+  "limits": "Seeded faults exercise known rules. Not independent validation, real-world detection accuracy, or proof of novelty."
+}

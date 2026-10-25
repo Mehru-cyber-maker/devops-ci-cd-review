@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>EvidenceGate report</title><style>
+body{font:16px/1.55 system-ui,sans-serif;background:#f2f5fa;color:#172c44;margin:0}
+main{max-width:1100px;margin:40px auto;padding:28px;background:white;border-radius:14px}
+h1{margin-bottom:4px}.sub,small{color:#526477}.badge{display:inline-block;padding:8px 16px;border-radius:6px;background:#dceee8}
+.block{background:#fce2de;color:#a32622}code{word-break:break-all}table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}
+td,th{text-align:left;padding:12px;border-bottom:1px solid #dce3ec;vertical-align:top}th{background:#edf2f8}
+small{display:block;margin-top:4px}tr.fail td:first-child{border-left:3px solid #c54e3e}li{margin:8px 0}
+button{padding:9px 14px;border:1px solid #b6c5d6;border-radius:6px;background:white;cursor:pointer}
+@media print{button{display:none}main{margin:0;padding:0}tr{break-inside:avoid}}
+</style><main><p class="sub">STUDENT RESEARCH PROTOTYPE · OFFLINE REPORT</p>
+<h1>EvidenceGate</h1><p>Consistency checks for CI/CD security evidence.</p>
+<h2 class="badge block">BLOCK</h2>
+<p>9 of 10 checks passed · 2026-10-25T09:00:00Z</p>
+<p><strong>Selected artifact SHA-256</strong><br><code>c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7</code></p>
+<p>PASS means the supplied claims satisfy the configured policy. Signatures and software behavior are not verified.</p>
+<button id="toggle" type="button">Show failed checks only</button>
+<table><thead><tr><th>Rule</th><th>Category</th><th>Status</th><th>Finding and action</th></tr></thead><tbody><tr class="pass"><td>EG001</td><td>Provenance</td><td><b>PASS</b></td><td>Supported SLSA v1 statement structure.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG002</td><td>Artifact binding</td><td><b>PASS</b></td><td>Provenance includes the selected artifact.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG003</td><td>Provenance</td><td><b>PASS</b></td><td>Declared builder is allowlisted.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG004</td><td>Source</td><td><b>PASS</b></td><td>Declared source URI and commit match policy.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG005</td><td>SBOM</td><td><b>PASS</b></td><td>Supported CycloneDX structure.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG006</td><td>Artifact binding</td><td><b>PASS</b></td><td>SBOM root component matches the selected artifact.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG007</td><td>Scan</td><td><b>PASS</b></td><td>Supported scan record with declared complete status.<small>None required for this check.</small></td></tr><tr class="fail"><td>EG008</td><td>Artifact binding</td><td><b>FAIL</b></td><td>Scan is not bound to the selected artifact.<small>Scan the selected artifact. Preserve its digest in the collected scan record.</small></td></tr><tr class="pass"><td>EG009</td><td>Freshness</td><td><b>PASS</b></td><td>Declared scan time is within the 72-hour window.<small>None required for this check.</small></td></tr><tr class="pass"><td>EG010</td><td>Vulnerabilities</td><td><b>PASS</b></td><td>No supplied vulnerability violates the severity policy.<small>None required for this check.</small></td></tr></tbody></table>
+<h2>Supplied vulnerability findings</h2>
+<p>No vulnerability findings in the supported scan record. Check scan validity above.</p>
+<h2>Interpretation limits</h2><ul><li>Checks consistency of supplied claims; does not verify signatures or producer identity.</li><li>Does not run a vulnerability scanner, inspect artifact behavior, or prove software is safe.</li><li>Timestamps, scan completeness, and source claims require a trusted collection process.</li><li>PASS means supplied evidence satisfies this policy; it is not a security certification.</li></ul>
+<script>let failedOnly=false;document.getElementById('toggle').addEventListener('click',function(){
+failedOnly=!failedOnly;document.querySelectorAll('tr.pass').forEach(r=>r.hidden=failedOnly);
+this.textContent=failedOnly?'Show all checks':'Show failed checks only';});</script></main></html>

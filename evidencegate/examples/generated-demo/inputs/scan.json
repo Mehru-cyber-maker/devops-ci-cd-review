@@ -1,0 +1,13 @@
+{
+  "schema": "evidencegate.scan/v1",
+  "subject": {
+    "sha256": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+  },
+  "scanner": {
+    "name": "synthetic-example-scanner",
+    "version": "demo-1"
+  },
+  "scanned_at": "2026-10-25T08:50:00Z",
+  "status": "complete",
+  "vulnerabilities": []
+}

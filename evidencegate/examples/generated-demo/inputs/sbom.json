@@ -1,0 +1,24 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "file",
+      "name": "artifact.txt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c541657aba2399fb0ff97d78fe38238ae26406889f34f67609063bd07ea96be7"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "synthetic-example",
+      "version": "1.0.0"
+    }
+  ]
+}

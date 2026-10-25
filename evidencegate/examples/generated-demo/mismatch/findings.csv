@@ -1,0 +1,11 @@
+id,category,status,message,action
+EG001,Provenance,pass,Supported SLSA v1 statement structure.,None required for this check.
+EG002,Artifact binding,pass,Provenance includes the selected artifact.,None required for this check.
+EG003,Provenance,pass,Declared builder is allowlisted.,None required for this check.
+EG004,Source,pass,Declared source URI and commit match policy.,None required for this check.
+EG005,SBOM,pass,Supported CycloneDX structure.,None required for this check.
+EG006,Artifact binding,pass,SBOM root component matches the selected artifact.,None required for this check.
+EG007,Scan,pass,Supported scan record with declared complete status.,None required for this check.
+EG008,Artifact binding,fail,Scan is not bound to the selected artifact.,Scan the selected artifact. Preserve its digest in the collected scan record.
+EG009,Freshness,pass,Declared scan time is within the 72-hour window.,None required for this check.
+EG010,Vulnerabilities,pass,No supplied vulnerability violates the severity policy.,None required for this check.
