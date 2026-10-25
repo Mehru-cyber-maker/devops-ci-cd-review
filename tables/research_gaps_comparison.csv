@@ -1,0 +1,8 @@
+Theme,Existing contribution,Unresolved issue,Direction for further literature development
+Organizational integration,Descriptions of collaboration and adoption practices,Relationship to sustained operational security remains context-dependent,Broader synthesis of organizational settings and long-term experience
+Automated detection,Identification of known code and configuration patterns,"Context, language coverage, and meaning of combined findings","More comparable reporting of scope, assumptions, and limitations"
+Infrastructure behavior,Studies of declarations and reconciliation defects,"Relationship among intended, executed, and live state",Integration of knowledge across configuration and runtime research
+Supply-chain integrity,"Provenance, signatures, and authorized-step specifications",Difference between authenticated production and benign behavior,Clearer synthesis of trust assumptions and consumer verification
+Identity and secrets,Guidance on credential hygiene and narrow permissions,Effective privilege across connected tools and temporary identities,Closer treatment of identity relationships throughout delivery
+Runtime response,Monitoring and post-deployment visibility,"Ownership, actionability, and changing exposure",Stronger connection between detection literature and response practice
+Tool integration,Multiple specialized mechanisms across the lifecycle,"Duplication, interoperability, and continuing maintenance effort",Comparative accounts of integration costs and sustained usability

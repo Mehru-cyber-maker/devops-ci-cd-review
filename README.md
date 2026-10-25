@@ -1,8 +1,8 @@
 # DevSecOps review paper
 
-**From Security Tool Integration to Verifiable Assurance**
+**DevSecOps Integration in CI/CD Pipelines**
 
-A Critical Review of DevSecOps in CI/CD Pipelines, Historical Failures, and a Testable Research Framework
+A Critical Review of Existing Research, Defensive Practices, and Open Challenges
 
 ## Download the revised paper
 
@@ -15,17 +15,24 @@ Open the PDF, Word document, or ZIP and select **Download raw file** in GitHub t
 
 ## Figures and literature comparisons
 
-The revised paper now contains **four figures and seven tables**, including two dedicated comparisons of the reviewed studies and security frameworks.
+The paper contains **four conceptual figures and seven comparison tables**, all focused on existing literature and established approaches.
 
-- Figure 1: reported Kubernetes detection results, with precision and recall shown separately.
-- Figure 2: evidence map linking literature and incidents to assurance questions.
-- Figure 3: proposed architecture for artifact and evidence verification.
-- Figure 4: proposed comparative evaluation design.
-- Table 2: research methods, samples, findings, and limitations across five reviewed studies.
-- Table 3: assurance questions, mechanisms, and limitations across seven frameworks or information sources.
+- Figure 1: themes in the reviewed DevSecOps literature.
+- Figure 2: academic studies, specifications, and incident evidence used in the review.
+- Figure 3: placement of existing security approaches across the delivery lifecycle.
+- Figure 4: open questions emerging from the comparison of existing work.
+- Table 1: evidence contributions and inference boundaries.
+- Table 2: reviewed studies, methods, reported scope, contributions, and limitations.
+- Table 3: existing security frameworks and their different assurance questions.
+- Table 4: historical failure mechanisms and defensive lessons.
+- Table 5: failure-prone practices and established alternatives.
+- Table 6: comparison of approaches by lifecycle stage.
+- Table 7: research gaps synthesized from the selected material.
 
-[Figure files](figures/) are available as PNG, SVG, and PDF. [Comparison tables](tables/) are also available as editable CSV files. The ZIP includes the paper, figures, and comparison tables. The detection chart redraws reported study values; the architecture and evaluation diagrams are proposals and contain no new experimental results.
+[Figure files](figures/) are available as PNG, SVG, and PDF. [Comparison tables](tables/) are also available as editable CSV files. The ZIP includes the paper, all figures, and the CSV tables.
 
-This revised version omits citation markers, author–date citations, external paper links, and the bibliography, as requested. It is an unreferenced critical review draft. Its proposed framework and evaluation plan are not completed experiments, and a systematic literature search has not been completed.
+This version is a literature review. It contains no new experiments, performance plots, hypotheses, proposed technical system, or experimental evaluation plan. Sample sizes in the study-comparison table describe the existing source studies, not new work conducted for this paper.
+
+Citation markers, author–date citations, external paper links, and the bibliography remain omitted as previously requested. The manuscript is a focused critical review of a selected source set; a completed systematic literature search is not claimed.
 
 The original uploaded PDF remains in this repository for comparison. The files named `DevSecOps_Review` contain the revised version.

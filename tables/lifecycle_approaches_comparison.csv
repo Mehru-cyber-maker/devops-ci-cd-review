@@ -1,0 +1,8 @@
+Stage,Existing approaches,Main contribution,Common limitation
+Plan,"Threat modeling, security requirements, ownership","Clarifies assets, assumptions, and responsibility",Analysis can become outdated or remain disconnected from implementation
+Code,"Source analysis, secret detection, review",Identifies selected weaknesses before release,Pattern coverage and context remain incomplete
+Build,"Dependency inspection, controlled inputs, build isolation",Examines components and limits production-process exposure,Unknown flaws and trusted-component compromise remain possible
+Test,Application assessment and requirement-based verification,Examines behavior and application requirements,Unexercised paths and environment differences limit conclusions
+Release,"Artifact signatures, provenance, authorized acceptance",Connects consumed artifacts to expected identity and production,Valid statements do not establish benign content
+Deploy,"IaC inspection, scoped identities, configuration policy",Addresses intended resources and deployment authority,Execution semantics and subsequent drift can change actual exposure
+Operate and monitor,"Live-state observation, telemetry, advisory response",Supports awareness of changing conditions after deployment,Visibility can remain incomplete or fail to produce effective response

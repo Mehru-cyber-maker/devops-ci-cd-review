@@ -1,0 +1,9 @@
+Practice,Why it is limited,Existing defensive alternative
+Security only at the final release checkpoint,Important weaknesses may be discovered after dependent work accumulates,Earlier feedback alongside release and operational safeguards
+Shared deployment identity across environments,A single compromise can cross project and environment boundaries,Narrow workload identities and context-specific permissions
+Mutable external scripts in privileged jobs,Retrieved code can change without a reviewed repository change,"Controlled inputs, trusted integrity expectations, and isolated execution"
+Treat every warning as equally important,Noise and missing context can undermine triage,"Contextual prioritization, ownership, and documented exceptions"
+Treat a signature as proof of safe behavior,Authenticated origin does not establish benign content,Verification of identity and production expectations alongside application assessment
+Produce an SBOM only for an audit,An unused or stale inventory does not support timely response,Connect component information to deployed artifacts and advisory handling
+Assume reconciliation guarantees security,Automation can repeatedly restore an unsafe intended state,Review desired configuration and observe actual infrastructure behavior
+Treat alert generation as incident response,A warning may have no owner or effective containment path,"Actionable monitoring, assigned responsibility, and maintained response processes"

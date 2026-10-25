@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="345.6pt" viewBox="0 0 518.4 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T08:00:13.546849</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6
+L 518.4 345.6
+L 518.4 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 20.850048 155.367936
+L 165.670272 155.367936
+Q 172.710144 155.367936 172.710144 150.674688
+L 172.710144 40.718592
+Q 172.710144 36.025344 165.670272 36.025344
+L 20.850048 36.025344
+Q 13.810176 36.025344 13.810176 40.718592
+L 13.810176 150.674688
+Q 13.810176 155.367936 20.850048 155.367936
+z
+" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 186.789888 155.367936
+L 331.610112 155.367936
+Q 338.649984 155.367936 338.649984 150.674688
+L 338.649984 40.718592
+Q 338.649984 36.025344 331.610112 36.025344
+L 186.789888 36.025344
+Q 179.750016 36.025344 179.750016 40.718592
+L 179.750016 150.674688
+Q 179.750016 155.367936 186.789888 155.367936
+z
+" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 352.729728 155.367936
+L 497.549952 155.367936
+Q 504.589824 155.367936 504.589824 150.674688
+L 504.589824 40.718592
+Q 504.589824 36.025344 497.549952 36.025344
+L 352.729728 36.025344
+Q 345.689856 36.025344 345.689856 40.718592
+L 345.689856 150.674688
+Q 345.689856 155.367936 352.729728 155.367936
+z
+" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 20.850048 299.517696
+L 165.670272 299.517696
+Q 172.710144 299.517696 172.710144 294.824448
+L 172.710144 184.868352
+Q 172.710144 180.175104 165.670272 180.175104
+L 20.850048 180.175104
+Q 13.810176 180.175104 13.810176 184.868352
+L 13.810176 294.824448
+Q 13.810176 299.517696 20.850048 299.517696
+z
+" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 186.789888 299.517696
+L 331.610112 299.517696
+Q 338.649984 299.517696 338.649984 294.824448
+L 338.649984 184.868352
+Q 338.649984 180.175104 331.610112 180.175104
+L 186.789888 180.175104
+Q 179.750016 180.175104 179.750016 184.868352
+L 179.750016 294.824448
+Q 179.750016 299.517696 186.789888 299.517696
+z
+" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 352.729728 299.517696
+L 497.549952 299.517696
+Q 504.589824 299.517696 504.589824 294.824448
+L 504.589824 184.868352
+Q 504.589824 180.175104 497.549952 180.175104
+L 352.729728 180.175104
+Q 345.689856 180.175104 345.689856 184.868352
+L 345.689856 294.824448
+Q 345.689856 299.517696 352.729728 299.517696
+z
+" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="328.68288" transform="rotate(-0 259.2 328.68288)">Overlapping review themes · Card size does not indicate frequency or effectiveness</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="61.163124" transform="rotate(-0 93.26016 61.163124)">Organization</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(68.464035 87.677747)">Ownership</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(62.269363 100.565004)">Collaboration</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(41.576863 113.452261)">Security requirements</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="61.163124" transform="rotate(-0 259.2 61.163124)">Code and dependencies</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(222.926367 87.677747)">Source analysis</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(206.787234 100.565004)">Component inspection</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(205.681406 113.452261)">Application verification</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="425.13984" y="61.163124" transform="rotate(-0 425.13984 61.163124)">Infrastructure</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(392.255621 87.677747)">IaC inspection</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(370.830746 100.565004)">Reconciliation behavior</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(383.321082 113.452261)">Live configuration</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="205.312884" transform="rotate(-0 93.26016 205.312884)">Identity and secrets</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(49.238465 231.827507)">Credential hygiene</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(46.847347 244.714764)">Scoped permissions</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(42.985668 257.602021)">Execution boundaries</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="205.312884" transform="rotate(-0 259.2 205.312884)">Supply-chain integrity</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(206.5155 231.827507)">Controlled build inputs</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(195.263953 244.714764)">Signatures and provenance</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(214.589789 257.602021)">Artifact verification</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="425.13984" y="205.312884" transform="rotate(-0 425.13984 205.312884)">Runtime and response</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(380.558692 231.827507)">Drift and telemetry</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(370.984051 244.714764)">Vulnerability advisories</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(380.930692 257.602021)">Incident ownership</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p344296c6fd">
+   <rect x="7.776" y="5.184" width="502.848" height="335.232"/>
+  </clipPath>
+ </defs>
+</svg>
