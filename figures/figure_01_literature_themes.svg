@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-25T08:00:13.546849</dc:date>
+    <dc:date>2026-10-25T08:14:23.304717</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 13.810176 36.025344 13.810176 40.718592
 L 13.810176 150.674688
 Q 13.810176 155.367936 20.850048 155.367936
 z
-" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#pd39eddec01)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 186.789888 155.367936
@@ -53,7 +53,7 @@ Q 179.750016 36.025344 179.750016 40.718592
 L 179.750016 150.674688
 Q 179.750016 155.367936 186.789888 155.367936
 z
-" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#pd39eddec01)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 352.729728 155.367936
@@ -66,7 +66,7 @@ Q 345.689856 36.025344 345.689856 40.718592
 L 345.689856 150.674688
 Q 345.689856 155.367936 352.729728 155.367936
 z
-" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#pd39eddec01)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 20.850048 299.517696
@@ -79,7 +79,7 @@ Q 13.810176 180.175104 13.810176 184.868352
 L 13.810176 294.824448
 Q 13.810176 299.517696 20.850048 299.517696
 z
-" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#pd39eddec01)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 186.789888 299.517696
@@ -92,7 +92,7 @@ Q 179.750016 180.175104 179.750016 184.868352
 L 179.750016 294.824448
 Q 179.750016 299.517696 186.789888 299.517696
 z
-" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#pd39eddec01)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 352.729728 299.517696
@@ -105,10 +105,10 @@ Q 345.689856 180.175104 345.689856 184.868352
 L 345.689856 294.824448
 Q 345.689856 299.517696 352.729728 299.517696
 z
-" clip-path="url(#p344296c6fd)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#pd39eddec01)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="328.68288" transform="rotate(-0 259.2 328.68288)">Overlapping review themes · Card size does not indicate frequency or effectiveness</text>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="328.68288" transform="rotate(-0 259.2 328.68288)">Topic groups overlap; their size does not show frequency or effectiveness.</text>
    </g>
    <g id="text_2">
     <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="61.163124" transform="rotate(-0 93.26016 61.163124)">Organization</text>
@@ -161,7 +161,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p344296c6fd">
+  <clipPath id="pd39eddec01">
    <rect x="7.776" y="5.184" width="502.848" height="335.232"/>
   </clipPath>
  </defs>

@@ -1,8 +1,8 @@
-Evidence stream,Contribution to understanding DevSecOps,Conclusion it does not establish
-Practitioner research,Reported collaboration and security practices,Universal causal reduction in breaches
-Historical literature mapping,Classification of a selected body of IaC research,Current distribution of all DevSecOps scholarship
-Security-smell research,Recurring weakness patterns in sampled scripts,Successful exploitation of every flagged pattern
-Reconciliation-defect research,Weaknesses in infrastructure execution behavior,Correct live state from static approval alone
-Configuration-tool comparison,Context-specific detection and coverage limitations,Permanent rankings of current products
-Security specifications,Defined requirements and verification mechanisms,Operational benefit from adoption alone
-Incident and exploitation material,Examples of observed failure mechanisms,Population-wide frequency or guaranteed prevention
+Type of source,What it explains,Main limit
+Practitioner research,Reported teamwork and security practices,Does not prove a general reduction in breaches
+Historical literature mapping,Topics covered by a selected set of IaC papers,Does not describe the whole current research field
+Security-smell research,Repeated warning patterns in infrastructure scripts,A warning does not prove successful exploitation
+Automation-defect research,Problems in how infrastructure changes are carried out,An approved file does not guarantee the expected live state
+Configuration-tool studies,Detection and coverage in a particular setting,"Findings depend on the tools, versions, and files examined"
+Security standards,Requirements and recommended checks,Publication of a requirement does not prove correct use
+Incident accounts,Examples of security failures,One incident does not establish overall frequency

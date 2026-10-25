@@ -1,4 +1,4 @@
-Case,Failure mechanism illustrated,Relevant existing approaches,Scope of the lesson
-SolarWinds,Compromise of a software production process,"Protected builds, provenance, controlled production changes, independent release authority",Trusted distribution and valid signatures do not alone prove benign content
-Codecov,CI helper code inherits access to sensitive build information,"Controlled inputs, isolated execution, narrow identities, integrity verification",Dependency origin and execution privilege must both be considered
-Log4Shell,Vulnerable legitimate component remains in deployed software,"Component inventories, advisory response, update and containment processes",Inventory supports response but does not remediate exposure itself
+Incident,Problem illustrated,Relevant security practices,Main lesson
+SolarWinds,Compromise of the software production process,"Protected builds, controlled changes, provenance checks, separate release approval",A trusted release channel or valid signature does not prove harmless content
+Codecov,Helper code can access sensitive build information,"Controlled inputs, isolated execution, limited permissions, integrity checks",The source of helper code and its execution permissions both matter
+Log4Shell,A vulnerable genuine component remains in deployed software,"Component inventories, advisory monitoring, updates, containment",Finding affected software is useful only when it leads to an effective response

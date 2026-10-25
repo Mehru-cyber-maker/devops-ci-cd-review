@@ -1,9 +1,9 @@
-Practice,Why it is limited,Existing defensive alternative
-Security only at the final release checkpoint,Important weaknesses may be discovered after dependent work accumulates,Earlier feedback alongside release and operational safeguards
-Shared deployment identity across environments,A single compromise can cross project and environment boundaries,Narrow workload identities and context-specific permissions
-Mutable external scripts in privileged jobs,Retrieved code can change without a reviewed repository change,"Controlled inputs, trusted integrity expectations, and isolated execution"
-Treat every warning as equally important,Noise and missing context can undermine triage,"Contextual prioritization, ownership, and documented exceptions"
-Treat a signature as proof of safe behavior,Authenticated origin does not establish benign content,Verification of identity and production expectations alongside application assessment
-Produce an SBOM only for an audit,An unused or stale inventory does not support timely response,Connect component information to deployed artifacts and advisory handling
-Assume reconciliation guarantees security,Automation can repeatedly restore an unsafe intended state,Review desired configuration and observe actual infrastructure behavior
-Treat alert generation as incident response,A warning may have no owner or effective containment path,"Actionable monitoring, assigned responsibility, and maintained response processes"
+Practice,Why it can cause problems,Established alternative
+Check security only before the final release,Important problems may be found after other work depends on them,Provide earlier feedback and continue checks during release and operation
+Share one deployment identity across environments,A compromise can affect several projects or environments,Limit identities and permissions to their tasks and environments
+Run changeable external scripts in privileged jobs,Downloaded code can change without a reviewed repository change,"Control inputs, check trusted integrity values, and separate execution"
+Treat every warning as equally urgent,Missing context and repeated alerts can make prioritization difficult,"Review relevance, assign owners, and document exceptions"
+Assume a signature proves software is safe,"A signature authenticates a statement or origin, not all behavior",Check artifact identity and production information alongside application security
+Create an SBOM only for an audit,An unused or outdated inventory does not support a timely response,Connect component information to deployments and vulnerability handling
+Assume automation always restores secure infrastructure,Automation can repeatedly apply an unsafe configuration,Review the intended settings and observe the actual environment
+Treat an alert as a completed response,The problem may remain unresolved without an owner or action,Maintain clear responsibilities and practical response processes

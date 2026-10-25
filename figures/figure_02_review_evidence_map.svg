@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-25T08:00:13.853055</dc:date>
+    <dc:date>2026-10-25T08:14:23.614419</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,32 +32,32 @@ z
    <g id="patch_2">
     <path d="M 95.212364 196.679311
 Q 176.229052 214.556857 256.044795 232.169397
-" clip-path="url(#p238d746955)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 252.569725 229.354456
 L 256.044795 232.169397
 L 251.7078 233.260488
 z
-" clip-path="url(#p238d746955)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 259.2 198.246556
 Q 259.2 214.556658 259.2 229.636922
-" clip-path="url(#p238d746955)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 261.2 225.636922
 L 259.2 229.636922
 L 257.2 225.636922
 z
-" clip-path="url(#p238d746955)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 423.187636 196.679311
 Q 342.170948 214.556857 262.355205 232.169397
-" clip-path="url(#p238d746955)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 266.6922 233.260488
 L 262.355205 232.169397
 L 265.830275 229.354456
 z
-" clip-path="url(#p238d746955)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
     <path d="M 20.850048 196.248528
@@ -70,7 +70,7 @@ Q 13.810176 26.509392 13.810176 31.300416
 L 13.810176 191.457504
 Q 13.810176 196.248528 20.850048 196.248528
 z
-" clip-path="url(#p238d746955)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 186.789888 196.248528
@@ -83,7 +83,7 @@ Q 179.750016 26.509392 179.750016 31.300416
 L 179.750016 191.457504
 Q 179.750016 196.248528 186.789888 196.248528
 z
-" clip-path="url(#p238d746955)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 352.729728 196.248528
@@ -96,7 +96,7 @@ Q 345.689856 26.509392 345.689856 31.300416
 L 345.689856 191.457504
 Q 345.689856 196.248528 352.729728 196.248528
 z
-" clip-path="url(#p238d746955)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 40.963968 295.491168
@@ -109,10 +109,10 @@ Q 33.924096 231.838992 33.924096 236.630016
 L 33.924096 290.700144
 Q 33.924096 295.491168 40.963968 295.491168
 z
-" clip-path="url(#p238d746955)" style="fill: #18354d; stroke: #18354d; stroke-linejoin: miter"/>
+" clip-path="url(#p021ea9c5b4)" style="fill: #18354d; stroke: #18354d; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="328.68612" transform="rotate(-0 259.2 328.68612)">Organization of the review · No causal model or systematic screening flow</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="328.68612" transform="rotate(-0 259.2 328.68612)">The arrows organize the review; they do not show cause and effect.</text>
    </g>
    <g id="text_2">
     <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="52.549215" transform="rotate(-0 93.26016 52.549215)">Academic studies</text>
@@ -125,10 +125,10 @@ z
     <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(35.246254 135.14266)">Kubernetes configuration</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="181.53324" transform="rotate(-0 93.26016 181.53324)">Observation ≠ general effect</text>
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="181.53324" transform="rotate(-0 93.26016 181.53324)">Reports practice and findings</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="52.549215" transform="rotate(-0 259.2 52.549215)">Specifications</text>
+    <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="52.549215" transform="rotate(-0 259.2 52.549215)">Standards and guidance</text>
    </g>
    <g id="text_6">
     <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(201.260125 84.147922)">Application requirements</text>
@@ -137,7 +137,7 @@ z
     <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(201.674125 122.393976)">Dependency governance</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="181.53324" transform="rotate(-0 259.2 181.53324)">Requirement ≠ proven protection</text>
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="181.53324" transform="rotate(-0 259.2 181.53324)">Describes expected practices</text>
    </g>
    <g id="text_8">
     <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="425.13984" y="52.549215" transform="rotate(-0 425.13984 52.549215)">Incident accounts</text>
@@ -148,18 +148,18 @@ z
     <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(361.66559 109.645291)">Vulnerable deployed library</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="181.53324" transform="rotate(-0 425.13984 181.53324)">Case ≠ frequency estimate</text>
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="181.53324" transform="rotate(-0 425.13984 181.53324)">Explains a particular incident</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 10.1px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="259.2" y="257.650862" transform="rotate(-0 259.2 257.650862)">Review synthesis: contributions → limitations → open questions</text>
+    <text style="font-weight: 700; font-size: 10.1px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="259.2" y="257.650862" transform="rotate(-0 259.2 257.650862)">Review: findings → limitations → open questions</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="259.2" y="281.150076" transform="rotate(-0 259.2 281.150076)">Compare each form of evidence within its stated scope.</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="259.2" y="281.150076" transform="rotate(-0 259.2 281.150076)">Different sources explain different parts of DevSecOps.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p238d746955">
+  <clipPath id="p021ea9c5b4">
    <rect x="7.776" y="5.292" width="502.848" height="342.216"/>
   </clipPath>
  </defs>

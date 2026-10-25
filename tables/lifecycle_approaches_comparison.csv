@@ -1,8 +1,8 @@
-Stage,Existing approaches,Main contribution,Common limitation
-Plan,"Threat modeling, security requirements, ownership","Clarifies assets, assumptions, and responsibility",Analysis can become outdated or remain disconnected from implementation
-Code,"Source analysis, secret detection, review",Identifies selected weaknesses before release,Pattern coverage and context remain incomplete
-Build,"Dependency inspection, controlled inputs, build isolation",Examines components and limits production-process exposure,Unknown flaws and trusted-component compromise remain possible
-Test,Application assessment and requirement-based verification,Examines behavior and application requirements,Unexercised paths and environment differences limit conclusions
-Release,"Artifact signatures, provenance, authorized acceptance",Connects consumed artifacts to expected identity and production,Valid statements do not establish benign content
-Deploy,"IaC inspection, scoped identities, configuration policy",Addresses intended resources and deployment authority,Execution semantics and subsequent drift can change actual exposure
-Operate and monitor,"Live-state observation, telemetry, advisory response",Supports awareness of changing conditions after deployment,Visibility can remain incomplete or fail to produce effective response
+Stage,Existing approaches,Main benefit,Common limitation
+Plan,"Threat modeling, requirements, assigned responsibilities",Clarifies what needs protection and who is responsible,The analysis can become outdated or disconnected from development
+Code,"Source analysis, secret detection, code review",Finds selected weaknesses before release,Rules and available context do not cover every problem
+Build,"Dependency checks, controlled inputs, isolated builds",Examines components and limits exposure during production,Unknown flaws and compromised trusted inputs remain possible
+Test,Application testing and requirements-based assessment,Examines behavior and security requirements,Untested paths and different environments limit coverage
+Release,"Signatures, provenance, artifact verification",Helps confirm artifact identity and expected production,Valid records do not prove harmless content
+Deploy,"IaC checks, limited identities, configuration policies",Reviews intended settings and deployment permissions,Automation behavior and later changes can affect the actual result
+Operate and monitor,"Live-state checks, logs, vulnerability monitoring",Helps identify changing conditions after deployment,Missing information or unclear ownership can delay response

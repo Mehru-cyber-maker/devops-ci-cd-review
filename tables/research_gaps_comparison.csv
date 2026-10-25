@@ -1,8 +1,8 @@
-Theme,Existing contribution,Unresolved issue,Direction for further literature development
-Organizational integration,Descriptions of collaboration and adoption practices,Relationship to sustained operational security remains context-dependent,Broader synthesis of organizational settings and long-term experience
-Automated detection,Identification of known code and configuration patterns,"Context, language coverage, and meaning of combined findings","More comparable reporting of scope, assumptions, and limitations"
-Infrastructure behavior,Studies of declarations and reconciliation defects,"Relationship among intended, executed, and live state",Integration of knowledge across configuration and runtime research
-Supply-chain integrity,"Provenance, signatures, and authorized-step specifications",Difference between authenticated production and benign behavior,Clearer synthesis of trust assumptions and consumer verification
-Identity and secrets,Guidance on credential hygiene and narrow permissions,Effective privilege across connected tools and temporary identities,Closer treatment of identity relationships throughout delivery
-Runtime response,Monitoring and post-deployment visibility,"Ownership, actionability, and changing exposure",Stronger connection between detection literature and response practice
-Tool integration,Multiple specialized mechanisms across the lifecycle,"Duplication, interoperability, and continuing maintenance effort",Comparative accounts of integration costs and sustained usability
+Topic,What existing work explains,Remaining question,Further work needed
+Teamwork and adoption,How teams report security practices and collaboration,How these practices support security over time in different settings,Reviews of more organizations and longer-term experience
+Automated detection,How tools identify selected weakness patterns,"How context, coverage, and repeated findings affect usefulness","Clearer comparison of tool scope, assumptions, and limitations"
+Infrastructure behavior,How declarations and automation defects affect resources,How intended settings relate to executed changes and live state,Closer connection between configuration and runtime research
+Supply-chain integrity,How signatures and provenance describe production,What verified records establish about behavior and producer trust,Clearer explanations of trust assumptions and receiving-system checks
+Identity and secrets,Why credential hygiene and limited access matter,How permissions interact across connected tools and temporary identities,More detailed accounts of access relationships throughout delivery
+Monitoring and response,How monitoring reveals conditions after deployment,How findings become timely action with clear ownership,Stronger connections between detection and response studies
+Tool integration,How specialized controls fit into delivery stages,How duplication and maintenance affect continued use,More comparison of integration effort and developer experience

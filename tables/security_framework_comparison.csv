@@ -1,8 +1,8 @@
-Framework or source,Primary question,Mechanism or contribution,Remaining limitation
-OWASP CI/CD risk taxonomy,Which delivery-process threats deserve attention?,Risk categories for pipeline assessment and control selection,Categories do not measure incidence or establish control effectiveness
-OWASP ASVS 5.0.0,Which application requirements should be verified?,Versioned requirements for automated and manual assessment,Requirement coverage and evidence quality must be established
-SLSA v1.1,What build-integrity guarantees accompany an artifact?,Provenance and verification against trusted production expectations,Correct provenance does not prove benign source or producer intent
-in-toto 1.0.0,Were authorized steps and artifact relationships followed?,Signed layouts and step metadata with verification rules,Incomplete rules and compromised trust roots can weaken protection
-OpenSSF S2C2F,How should open-source consumption be governed?,Dependency-ingestion practices and maturity guidance,Governance does not establish the absence of vulnerable or malicious components
-OpenSSF Scorecard,Which observable security practices warrant attention?,Automated heuristic checks for maintenance and dependency assessment,A score is not a calibrated probability of compromise
-CISA exploitation catalog,Is exploitation of a listed vulnerability known?,Information supporting prioritization of affected assets,Unlisted vulnerabilities can still be exploitable
+Framework or source,Main question,What it provides,Main limitation
+OWASP CI/CD risk taxonomy,Which pipeline risks should be considered?,Risk categories for reviewing delivery processes,Categories do not show risk frequency or prove effective protection
+OWASP ASVS 5.0.0,Which application requirements should be checked?,Requirements for automated and manual security assessment,Teams must still show which requirements were checked and how
+SLSA v1.1,What is known about an artifact’s build process?,Provenance and checks against trusted build expectations,Correct build information does not prove harmless source code
+in-toto 1.0.0,Were the expected steps carried out by authorized actors?,Signed process records and verification rules,Missing rules or compromised trust material can weaken the checks
+OpenSSF S2C2F,How should open-source components be managed?,Guidance on dependency use and organizational practices,Guidance does not guarantee that components are free from weaknesses
+OpenSSF Scorecard,Which visible security practices need attention?,Automated checks that support project and dependency review,A score does not give the probability of a compromise
+CISA exploitation catalog,Is exploitation of a listed vulnerability known?,Information that helps prioritize affected software,A vulnerability may still be exploitable even if it is not listed

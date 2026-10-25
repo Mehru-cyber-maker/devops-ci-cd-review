@@ -2,7 +2,7 @@
 
 **DevSecOps Integration in CI/CD Pipelines**
 
-A Critical Review of Existing Research, Defensive Practices, and Open Challenges
+A Review of Existing Studies, Security Practices, and Research Gaps
 
 ## Download the revised paper
 
@@ -21,13 +21,13 @@ The paper contains **four conceptual figures and seven comparison tables**, all 
 - Figure 2: academic studies, specifications, and incident evidence used in the review.
 - Figure 3: placement of existing security approaches across the delivery lifecycle.
 - Figure 4: open questions emerging from the comparison of existing work.
-- Table 1: evidence contributions and inference boundaries.
+- Table 1: what the reviewed sources explain and the limits of their conclusions.
 - Table 2: reviewed studies, methods, reported scope, contributions, and limitations.
-- Table 3: existing security frameworks and their different assurance questions.
+- Table 3: the purposes, benefits, and limitations of existing security frameworks.
 - Table 4: historical failure mechanisms and defensive lessons.
 - Table 5: failure-prone practices and established alternatives.
 - Table 6: comparison of approaches by lifecycle stage.
-- Table 7: research gaps synthesized from the selected material.
+- Table 7: research gaps and directions for further study.
 
 [Figure files](figures/) are available as PNG, SVG, and PDF. [Comparison tables](tables/) are also available as editable CSV files. The ZIP includes the paper, all figures, and the CSV tables.
 
