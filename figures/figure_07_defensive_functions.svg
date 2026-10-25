@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="374.4pt" viewBox="0 0 518.4 374.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T08:24:02.180180</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.4
+L 518.4 374.4
+L 518.4 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 95.237684 270.677082
+Q 176.231856 283.4398 256.01118 296.011087
+" clip-path="url(#pec396f50a1)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 252.371244 293.412844
+L 256.01118 296.011087
+L 251.748624 297.36409
+z
+" clip-path="url(#pec396f50a1)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 259.2 272.366797
+Q 259.2 283.439471 259.2 293.282308
+" clip-path="url(#pec396f50a1)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 261.2 289.282308
+L 259.2 293.282308
+L 257.2 289.282308
+z
+" clip-path="url(#pec396f50a1)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 423.162316 270.677082
+Q 342.168144 283.4398 262.38882 296.011087
+" clip-path="url(#pec396f50a1)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 266.651376 297.36409
+L 262.38882 296.011087
+L 266.028756 293.412844
+z
+" clip-path="url(#pec396f50a1)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 20.850048 270.002304
+L 165.670272 270.002304
+Q 172.710144 270.002304 172.710144 264.917952
+L 172.710144 33.216768
+Q 172.710144 28.132416 165.670272 28.132416
+L 20.850048 28.132416
+Q 13.810176 28.132416 13.810176 33.216768
+L 13.810176 264.917952
+Q 13.810176 270.002304 20.850048 270.002304
+z
+" clip-path="url(#pec396f50a1)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 186.789888 270.002304
+L 331.610112 270.002304
+Q 338.649984 270.002304 338.649984 264.917952
+L 338.649984 33.216768
+Q 338.649984 28.132416 331.610112 28.132416
+L 186.789888 28.132416
+Q 179.750016 28.132416 179.750016 33.216768
+L 179.750016 264.917952
+Q 179.750016 270.002304 186.789888 270.002304
+z
+" clip-path="url(#pec396f50a1)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 352.729728 270.002304
+L 497.549952 270.002304
+Q 504.589824 270.002304 504.589824 264.917952
+L 504.589824 33.216768
+Q 504.589824 28.132416 497.549952 28.132416
+L 352.729728 28.132416
+Q 345.689856 28.132416 345.689856 33.216768
+L 345.689856 264.917952
+Q 345.689856 270.002304 352.729728 270.002304
+z
+" clip-path="url(#pec396f50a1)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 40.963968 351.715104
+L 477.436032 351.715104
+Q 484.475904 351.715104 484.475904 346.630752
+L 484.475904 301.961088
+Q 484.475904 296.876736 477.436032 296.876736
+L 40.963968 296.876736
+Q 33.924096 296.876736 33.924096 301.961088
+L 33.924096 346.630752
+Q 33.924096 351.715104 40.963968 351.715104
+z
+" clip-path="url(#pec396f50a1)" style="fill: #18354d; stroke: #18354d; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="59.040621" transform="rotate(-0 93.26016 59.040621)">Prevent</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(48.870129 86.118467)">Limit opportunities</text>
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(45.838629 98.78717)">for harmful changes</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 30.40416 121.82976
+L 156.11616 121.82976
+" clip-path="url(#pec396f50a1)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="144.858945" transform="rotate(-0 93.26016 144.858945)">Examples</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(47.629347 164.334802)">Limited permissions</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(64.486387 176.599185)">Isolated jobs</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(54.343441 188.863568)">Controlled inputs</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(50.775957 201.127951)">Reviewed changes</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="59.040621" transform="rotate(-0 259.2 59.040621)">Detect</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(211.517766 86.118467)">Identify weaknesses</text>
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(206.944078 98.78717)">or changed conditions</text>
+   </g>
+   <g id="line2d_2">
+    <path d="M 196.344 121.82976
+L 322.056 121.82976
+" clip-path="url(#pec396f50a1)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="144.858945" transform="rotate(-0 259.2 144.858945)">Examples</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(205.036516 164.334802)">Code and config checks</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(206.019742 176.599185)">Dependency advisories</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(224.372594 188.863568)">Logs and alerts</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(208.385031 201.127951)">Live-state observation</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="425.13984" y="59.040621" transform="rotate(-0 425.13984 59.040621)">Respond</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(386.593965 86.118467)">Act on identified</text>
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(382.986715 98.78717)">security problems</text>
+   </g>
+   <g id="line2d_3">
+    <path d="M 362.28384 121.82976
+L 487.99584 121.82976
+" clip-path="url(#pec396f50a1)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="144.858945" transform="rotate(-0 425.13984 144.858945)">Examples</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(386.687363 164.334802)">Assigned owners</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(369.272949 176.599185)">Patching or containment</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(376.226629 188.863568)">Credential revocation</text>
+    <text style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(366.924723 201.127951)">Review and improvement</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(117.436773 320.582374)">Findings and incident lessons inform later changes.</text>
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(129.190445 333.362654)">Some controls support more than one function.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pec396f50a1">
+   <rect x="7.776" y="5.616" width="502.848" height="363.168"/>
+  </clipPath>
+ </defs>
+</svg>

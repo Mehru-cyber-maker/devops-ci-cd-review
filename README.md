@@ -15,12 +15,16 @@ Open the PDF, Word document, or ZIP and select **Download raw file** in GitHub t
 
 ## Figures and literature comparisons
 
-The paper contains **four conceptual figures and seven comparison tables**, all focused on existing literature and established approaches.
+The paper contains **eight conceptual figures and seven comparison tables**, all focused on existing literature and established approaches.
 
 - Figure 1: themes in the reviewed DevSecOps literature.
 - Figure 2: academic studies, specifications, and incident evidence used in the review.
 - Figure 3: placement of existing security approaches across the delivery lifecycle.
-- Figure 4: open questions emerging from the comparison of existing work.
+- Figure 4: comparison of what SAST, SCA, DAST, and IaC checks examine.
+- Figure 5: credential exposure risks and established safeguards.
+- Figure 6: different roles of signatures, provenance, and an SBOM.
+- Figure 7: prevention, detection, and response in existing security practices.
+- Figure 8: open questions emerging from the comparison of existing work.
 - Table 1: what the reviewed sources explain and the limits of their conclusions.
 - Table 2: reviewed studies, methods, reported scope, contributions, and limitations.
 - Table 3: the purposes, benefits, and limitations of existing security frameworks.

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="374.4pt" viewBox="0 0 518.4 374.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T08:24:01.901417</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.4
+L 518.4 374.4
+L 518.4 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 20.850048 302.687424
+L 165.670272 302.687424
+Q 172.710144 302.687424 172.710144 297.603072
+L 172.710144 33.216768
+Q 172.710144 28.132416 165.670272 28.132416
+L 20.850048 28.132416
+Q 13.810176 28.132416 13.810176 33.216768
+L 13.810176 297.603072
+Q 13.810176 302.687424 20.850048 302.687424
+z
+" clip-path="url(#p0866143173)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 186.789888 302.687424
+L 331.610112 302.687424
+Q 338.649984 302.687424 338.649984 297.603072
+L 338.649984 33.216768
+Q 338.649984 28.132416 331.610112 28.132416
+L 186.789888 28.132416
+Q 179.750016 28.132416 179.750016 33.216768
+L 179.750016 297.603072
+Q 179.750016 302.687424 186.789888 302.687424
+z
+" clip-path="url(#p0866143173)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 352.729728 302.687424
+L 497.549952 302.687424
+Q 504.589824 302.687424 504.589824 297.603072
+L 504.589824 33.216768
+Q 504.589824 28.132416 497.549952 28.132416
+L 352.729728 28.132416
+Q 345.689856 28.132416 345.689856 33.216768
+L 345.689856 297.603072
+Q 345.689856 302.687424 352.729728 302.687424
+z
+" clip-path="url(#p0866143173)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 40.963968 358.978464
+L 477.436032 358.978464
+Q 484.475904 358.978464 484.475904 353.894112
+L 484.475904 320.119488
+Q 484.475904 315.035136 477.436032 315.035136
+L 40.963968 315.035136
+Q 33.924096 315.035136 33.924096 320.119488
+L 33.924096 353.894112
+Q 33.924096 358.978464 40.963968 358.978464
+z
+" clip-path="url(#p0866143173)" style="fill: #18354d; stroke: #18354d; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="56.768875" transform="rotate(-0 93.26016 56.768875)">Signature</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="82.968416" transform="rotate(-0 93.26016 82.968416)">Main question</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(38.380722 101.582722)">Who signed this artifact</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(60.968879 113.981879)">or statement?</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 30.40416 132.7248
+L 156.11616 132.7248
+" clip-path="url(#p0866143173)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="156.328352" transform="rotate(-0 93.26016 156.328352)">Useful for</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(37.28966 174.942658)">Checking signer identity</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(44.628097 187.341815)">and content integrity</text>
+   </g>
+   <g id="line2d_2">
+    <path d="M 30.40416 205.3584
+L 156.11616 205.3584
+" clip-path="url(#p0866143173)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="228.961952" transform="rotate(-0 93.26016 228.961952)">Does not prove</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(45.746488 247.42429)">All software behavior</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(78.780707 259.553899)">is safe</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="56.768875" transform="rotate(-0 259.2 56.768875)">Provenance</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="82.968416" transform="rotate(-0 259.2 82.968416)">Main question</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(228.870187 101.582722)">How was this</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(217.096344 113.981879)">artifact produced?</text>
+   </g>
+   <g id="line2d_3">
+    <path d="M 196.344 132.7248
+L 322.056 132.7248
+" clip-path="url(#p0866143173)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="156.328352" transform="rotate(-0 259.2 156.328352)">Useful for</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(207.788531 174.942658)">Comparing production</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(218.397281 187.341815)">with expectations</text>
+   </g>
+   <g id="line2d_4">
+    <path d="M 196.344 205.3584
+L 322.056 205.3584
+" clip-path="url(#p0866143173)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="228.961952" transform="rotate(-0 259.2 228.961952)">Does not prove</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(222.175547 247.42429)">The source code</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(233.703984 259.553899)">is harmless</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="425.13984" y="56.768875" transform="rotate(-0 425.13984 56.768875)">SBOM</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="82.968416" transform="rotate(-0 425.13984 82.968416)">Main question</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(381.07184 101.582722)">Which components</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(401.293153 113.981879)">are listed?</text>
+   </g>
+   <g id="line2d_5">
+    <path d="M 362.28384 132.7248
+L 487.99584 132.7248
+" clip-path="url(#p0866143173)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="156.328352" transform="rotate(-0 425.13984 156.328352)">Useful for</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(382.67609 174.942658)">Finding potentially</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(385.538153 187.341815)">affected releases</text>
+   </g>
+   <g id="line2d_6">
+    <path d="M 362.28384 205.3584
+L 487.99584 205.3584
+" clip-path="url(#p0866143173)" style="fill: none; stroke: #b5c9d8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="228.961952" transform="rotate(-0 425.13984 228.961952)">Does not prove</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(366.773434 247.42429)">Every component is listed</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(366.183512 259.553899)">or the software is patched</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(148.45375 333.369821)">Different questions, shared requirement:</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(121.611797 345.812372)">link records to the correct artifact and verify them.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0866143173">
+   <rect x="7.776" y="5.616" width="502.848" height="363.168"/>
+  </clipPath>
+ </defs>
+</svg>

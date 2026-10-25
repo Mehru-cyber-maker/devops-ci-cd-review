@@ -201,6 +201,14 @@ Each approach has limits. Source-code analysis may not reveal an unsafe cloud ro
 
 These differences explain why guidance often recommends combining approaches. However, adding more tools does not always add independent coverage. Similar rules may produce duplicate findings or miss the same weakness. A useful comparison considers what each approach can observe and what information it lacks.
 
+Figure 4 compares the main inputs and limits of these approaches. It shows why a source-code check, a dependency check, a running-application test, and an infrastructure check should be interpreted differently. The diagram compares general methods, rather than ranking particular products.
+
+**Figure 4. Comparison of what SAST, SCA, DAST, and IaC checks examine.**
+
+![Comparison of source-code analysis, dependency analysis, running-application tests, and infrastructure configuration checks, including their main limitations.](figures/figure_04_security_check_comparison.png){width=6.5in}
+
+The examples describe common uses. Actual coverage depends on the tool, its configuration, and the information available to it.
+
 ### 4.4 Identity and secrets management
 
 Secrets can be exposed in more places than the source repository. They may appear in logs, container layers, caches, temporary files, or build environments. A successful source scan therefore does not prove that every credential is protected.
@@ -209,6 +217,14 @@ Identity and access management (IAM) helps control what a pipeline or service is
 
 Temporary credentials can reduce how long an exposed credential remains useful. Their permissions still matter. A temporary administrator token can cause harm while it is valid, and broad identity rules may allow another token to be issued. Least privilege means examining the access actually granted, rather than relying on a role's name or a token's short lifetime.
 
+Figure 5 links common locations of credential exposure with established safeguards. A credential's location affects how it can be exposed, while its permissions affect which resources may be reached. The controls shown address different parts of this problem; none guarantees that credentials can never be misused.
+
+**Figure 5. Credential exposure risks and established safeguards in CI/CD.**
+
+![Common exposure locations include source files, job environments, logs, caches, and image layers; safeguards cover storage, scoped use, and response to exposure.](figures/figure_05_credential_risks.png){width=6.5in}
+
+The arrows show possible relationships, not an inevitable attack sequence. Temporary credentials can limit reuse time, but narrow permissions and an effective response are still important.
+
 ### 4.5 Signatures, provenance, and component inventories
 
 Signatures, provenance, and software inventories describe different properties. A digital signature can authenticate a statement or identify who signed an artifact. Provenance records information about how software was produced. An inventory lists its components. These records are most useful when they refer to the exact artifact being released or deployed.
@@ -216,6 +232,14 @@ Signatures, provenance, and software inventories describe different properties. 
 An immutable digest, a hash used to identify particular file contents, can help establish that different stages handled the same bytes. A release name or changeable tag may not provide the same assurance. Verification also requires checking the signer, the expected producer, and the artifact to which a statement applies. Collecting a signed record without checking these details leaves important questions unanswered.
 
 A software bill of materials (SBOM) can help teams locate affected releases when a new vulnerability is disclosed. It needs to be connected to deployment records and kept useful as information changes. An SBOM does not install a patch or prove that an application cannot be exploited. It supports response by helping teams understand what they use.
+
+Figure 6 separates the questions answered by signatures, provenance, and an SBOM. These records can support one another, but they describe different properties. Their usefulness depends on connecting them to the correct artifact and checking the information before relying on it.
+
+**Figure 6. Different roles of signatures, provenance, and an SBOM.**
+
+![Signatures concern signer identity and integrity, provenance describes production, and an SBOM lists components; each leaves different questions unanswered.](figures/figure_06_supply_chain_records.png){width=6.5in}
+
+The comparison summarizes the reviewed approaches. It does not imply that any one record proves complete software security.
 
 ## 5. Lessons from Past Security Incidents
 
@@ -308,6 +332,14 @@ Monitoring can reveal changes that earlier checks cannot observe. However, logs 
 
 Teams also need to review software after deployment. A newly disclosed vulnerability or a changed configuration can affect a release that previously passed its checks. Continuous security involves responding to this changing information rather than assuming that a successful build check remains sufficient indefinitely.
 
+Figure 7 groups the reviewed practices by three functions: prevention, detection, and response. This distinction helps explain why finding a weakness is different from limiting the opportunity for misuse or taking action after a problem is identified. The functions overlap, and some controls can support more than one of them.
+
+**Figure 7. Prevention, detection, and response in the reviewed security practices.**
+
+![Three complementary functions: prevention limits opportunities for misuse, detection identifies weaknesses or changes, and response assigns action to identified problems.](figures/figure_07_defensive_functions.png){width=6.5in}
+
+This is an explanatory grouping of existing practices, not a new security framework or a measured comparison of effectiveness.
+
 **Table 6. Comparison of security approaches across lifecycle stages.**
 
 | Stage | Existing approaches | Main benefit | Common limitation |
@@ -322,11 +354,11 @@ Teams also need to review software after deployment. A newly disclosed vulnerabi
 
 ### 6.6 Summary of open questions
 
-Figure 4 and Table 7 bring together the main questions identified in the selected material. These are areas that need further attention within this review. They should not be read as proof that no other researchers have studied them.
+Figure 8 and Table 7 bring together the main questions identified in the selected material. These are areas that need further attention within this review. They should not be read as proof that no other researchers have studied them.
 
-**Figure 4. Open questions identified through the literature comparison.**
+**Figure 8. Open questions identified through the literature comparison.**
 
-![Questions about long-term security outcomes, detection coverage, trust, response, and tool maintenance.](figures/figure_04_literature_gaps.png){width=6.5in}
+![Questions about long-term security outcomes, detection coverage, trust, response, and tool maintenance.](figures/figure_08_literature_gaps.png){width=6.5in}
 
 The figure summarizes the discussion. It contains no performance measurements or new experimental findings.
 
