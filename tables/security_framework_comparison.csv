@@ -1,0 +1,8 @@
+Framework or source,Primary question addressed,Evidence or decision mechanism,Remaining uncertainty
+OWASP CI/CD risk taxonomy,Which delivery-process threats should be considered?,Threat categories guide pipeline assessment and control selection,"A taxonomy does not measure incidence, deploy controls, or prove their effectiveness"
+OWASP ASVS 5.0.0,Which application-security requirements should be verified?,Versioned requirements mapped to automated and manual assessment,Requirement coverage and evidence quality must be established; application checks do not secure the builder by themselves
+SLSA v1.1,"How was an artifact built, and what build-integrity guarantees apply?","Provenance, builder trust, and consumer verification against expectations",Correct provenance does not prove benign source code or producer intent
+in-toto 1.0.0,Were authorized supply-chain steps and artifact relationships followed?,Signed layouts and step metadata checked against defined rules,"Incomplete layouts, broad rules, or compromised trust roots can weaken verification"
+OpenSSF S2C2F,How should open-source consumption be governed?,Dependency-ingestion practices and a maturity-based implementation guide,A governance model does not itself establish absence of malicious or vulnerable dependencies
+OpenSSF Scorecard,Which observable security-practice heuristics warrant attention?,Automated checks provide signals for maintenance and dependency decisions,A score is not a calibrated compromise probability or proof of safe behavior
+CISA exploitation catalog,Is exploitation of a listed vulnerability already known?,Catalog entries support prioritization of affected assets,Unlisted weaknesses may still be exploitable; asset exposure must be assessed separately

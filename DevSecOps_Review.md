@@ -37,7 +37,7 @@ This manuscript is a **critical review with a proposed systematic-review protoco
 
 The substantive source set comprises five academic manuscripts and seven official project or agency sources. Academic manuscripts were obtained from an author's public publication archive and examined for their questions, methods, reported outcomes, and limitations. The other sources were selected for direct relevance to pipeline threats, provenance, application verification, dependency consumption, security heuristics, and known exploitation. Official GitHub-hosted material was accessible during preparation; several publisher and agency websites were unavailable through the environment's network policy. Source retrieval took place on 23 October 2026; this date does not establish exhaustive coverage through 2026.
 
-Selection was purposive and access-constrained. All five academic manuscripts share a coauthor, creating a substantial concentration of perspective. Author-hosted versions may differ from the final published articles. These constraints permit a transparent, bounded synthesis, but they prevent claims about the prevalence of positions across the entire DevSecOps literature. The proposed broader search protocol is supplied separately.
+Selection was purposive and access-constrained. All five academic manuscripts share a coauthor, creating a substantial concentration of perspective. Author-hosted versions may differ from the final published articles. These constraints permit a transparent, bounded synthesis, but they prevent claims about the prevalence of positions across the entire DevSecOps literature. A broader, independently reproducible search remains necessary before systematic-review claims are warranted.
 
 ### 2.2 Extraction and critical appraisal
 
@@ -98,7 +98,13 @@ A Kubernetes configuration study examines 53 CIS-prescribed configurations, 20 s
 
 The consulted version reports highest aggregate precision values of 0.41 and 0.43 for individual tools in the proprietary and open-source datasets, respectively. It also reports recall of 0.53 and 0.65 for the combination of all five tools. These values describe the authors' rule mappings, datasets, and tested configurations. They are not current benchmark rankings or universal performance characteristics of those products. The source version also contains inconsistencies in some prevalence counts and summary figures; those figures are not reused here and require checking against the final publication.
 
-The practical implication is conditional. Combining tools can expand coverage, but correlated rules, noisy results, incomplete mappings, and maintenance burden can limit the gain. The relevant question is the additional correctly identified weaknesses or interrupted attack paths per unit of effort. More alerts alone do not answer it.
+The practical implication is conditional. Combining tools can expand coverage, but correlated rules, noisy results, incomplete mappings, and maintenance burden can limit the gain. The relevant question is the additional correctly identified weaknesses or interrupted attack paths per unit of effort. More alerts alone do not answer it. Figure 1 visualizes the reported precision and recall separately so that distinct detector configurations are not presented as a single improvement estimate.
+
+**Figure 1. Reported detection results in the reviewed Kubernetes configuration study.**
+
+![Two-panel chart separating best reported individual-tool precision from combined-tool recall in proprietary and open-source datasets.](figures/figure_01_detection_results.png){width=6.5in}
+
+Panel A shows the highest reported individual-tool precision in each dataset; Panel B shows recall when all five tools are combined. The datasets contain 188 proprietary and 356 open-source configuration files. These are different metrics and detector configurations, not before-and-after measurements. The values describe the consulted source version, not current tool rankings; no new uncertainty intervals or experimental results are estimated here.
 
 ### 3.6 Standards address complementary assurance questions
 
@@ -123,6 +129,46 @@ OpenSSF's S2C2F addresses secure consumption of open-source dependencies, while 
 | Kubernetes evaluation | Context-specific evidence of detection limitations | Current universal tool rankings |
 | Specifications and guidance | Threat categories, requirements, and verification mechanisms | Measured deployment benefit from adoption alone |
 | Exploitation catalog | Known exploitation of its listed vulnerabilities | Completeness of all exploitable weaknesses |
+
+### 3.7 Comparison of the reviewed empirical and secondary studies
+
+Table 2 compares the academic studies by design and evidential contribution. A survey, a mapping study, a mined defect corpus, and a detector evaluation do not provide interchangeable estimates of effectiveness. The comparison therefore retains each study's unit of analysis and identifies the inference that remains unresolved. It does not rank studies by sample size or treat larger artifact collections as automatically stronger causal evidence.
+
+**Table 2. Comparison of research designs, samples, contributions, and limitations.**
+
+| Study focus | Design and sample | Contribution to this review | Limitation and resulting research need |
+|:--|:--|:--|:--|
+| Organizational integration | Exploratory artifact analysis and survey of nine organizations | Collaboration, security requirements, and shared practices help explain adoption | Self-report and a small organizational sample do not establish breach reduction; evaluate behavior and outcomes longitudinally |
+| Historical IaC research landscape | Systematic mapping of 32 publications; collection completed in 2017 | Half of the selected corpus concerns frameworks or tools, distinguishing proposals from evaluated outcomes | Historical and search-dependent coverage cannot describe today's field; repeat searches and compare evaluation maturity |
+| Security smells in IaC | Static-analysis study of 15,232 scripts from 293 open-source repositories | Recurring configuration weaknesses motivate automated inspection and contextual triage | A smell is not a confirmed exploit; validate rules in additional languages and deployed contexts |
+| State reconciliation | Analysis of 5,110 Ansible-related defects, yielding eight categories | Execution-engine behavior can invalidate assumptions based only on approved configuration text | Findings are tied to the investigated orchestrator; test state transitions and live effects in other systems |
+| Kubernetes configuration detection | Five tools; 53 prescribed configurations; 544 files and 20 survey respondents | Reported precision and combined-tool recall reveal detection limitations despite tool availability | Results depend on versions, rule mappings, and datasets; validate independently and reconcile source-version discrepancies |
+
+The repeated gap across these designs is the distance between an intermediate observation and an operational outcome. Reported collaboration does not prove correct authorization; detected smells do not prove containment; a compliant configuration file does not prove correct execution. Figure 2 maps these evidence streams to the questions the proposed framework must still answer.
+
+**Figure 2. Evidence map linking reviewed literature and incidents to unresolved assurance questions.**
+
+![Three evidence streams—academic studies, specifications, and incidents—feed a synthesis of adoption, detection, verification, and runtime reassessment.](figures/figure_02_evidence_map.png){width=6.5in}
+
+This is a conceptual synthesis of the selected material. Arrows show how the analysis informs research questions; they do not indicate causality, effect size, a completed systematic-search flow, or a validated maturity scale. The final assurance chain is a proposed response to the identified boundaries, not a result demonstrated by the reviewed studies.
+
+### 3.8 Comparison of complementary security frameworks
+
+Table 3 compares the primary assurance question addressed by each reviewed framework or information source. The entries describe mechanisms and intended scope, not benchmark results or exclusive capabilities. Their complementarity explains why adopting a single checklist, inventory, or signature mechanism cannot establish end-to-end delivery security.
+
+**Table 3. Comparison of security frameworks, evidence mechanisms, and remaining uncertainty.**
+
+| Framework or source | Primary question addressed | Evidence or decision mechanism | Remaining uncertainty |
+|:--|:--|:--|:--|
+| OWASP CI/CD risk taxonomy | Which delivery-process threats should be considered? | Threat categories guide pipeline assessment and control selection | A taxonomy does not measure incidence, deploy controls, or prove their effectiveness |
+| OWASP ASVS 5.0.0 | Which application-security requirements should be verified? | Versioned requirements mapped to automated and manual assessment | Requirement coverage and evidence quality must be established; application checks do not secure the builder by themselves |
+| SLSA v1.1 | How was an artifact built, and what build-integrity guarantees apply? | Provenance, builder trust, and consumer verification against expectations | Correct provenance does not prove benign source code or producer intent |
+| in-toto 1.0.0 | Were authorized supply-chain steps and artifact relationships followed? | Signed layouts and step metadata checked against defined rules | Incomplete layouts, broad rules, or compromised trust roots can weaken verification |
+| OpenSSF S2C2F | How should open-source consumption be governed? | Dependency-ingestion practices and a maturity-based implementation guide | A governance model does not itself establish absence of malicious or vulnerable dependencies |
+| OpenSSF Scorecard | Which observable security-practice heuristics warrant attention? | Automated checks provide signals for maintenance and dependency decisions | A score is not a calibrated compromise probability or proof of safe behavior |
+| CISA exploitation catalog | Is exploitation of a listed vulnerability already known? | Catalog entries support prioritization of affected assets | Unlisted weaknesses may still be exploitable; asset exposure must be assessed separately |
+
+Together, Tables 2 and 3 motivate evaluating the complete claim-to-decision chain. Empirical observations can identify a weakness; a specification can structure evidence; an enforcement point must still decide whether the evidence applies to the exact artifact and deployment context. Runtime reassessment is needed when that context changes.
 
 ## 4. Threat Model and Defensive Objectives
 
@@ -170,7 +216,7 @@ An artifact-linked software bill of materials (SBOM) can help locate potentially
 
 The proposed response links dependency inventory to deployed artifact digests, rescans retained inventories when new advisories appear, validates affected configurations, and rehearses patching or containment. Reachability analysis can prioritize investigation, but uncertain analysis should not be converted into a confident finding of non-exploitability. A signed vulnerability assessment must still carry supporting evidence and a revision policy.
 
-**Table 2. Historical mechanism, proposed defense, and residual limitation.**
+**Table 4. Historical mechanism, proposed defense, and residual limitation.**
 
 | Case and mechanism | Proposed defensive response | Residual limitation | Proposed validation |
 |:--|:--|:--|:--|
@@ -180,9 +226,9 @@ The proposed response links dependency inventory to deployed artifact digests, r
 
 ### 5.4 Failure-prone practices and defensive alternatives
 
-Security technologies can fail through mismatched assumptions, incomplete adoption, or inappropriate use. Analyzing the failure mechanism produces more actionable conclusions than labeling an entire technology inherently unsafe. Table 3 reframes problematic practices as testable anti-patterns. These are analytical categories, not estimates of how often organizations use them.
+Security technologies can fail through mismatched assumptions, incomplete adoption, or inappropriate use. Analyzing the failure mechanism produces more actionable conclusions than labeling an entire technology inherently unsafe. Table 5 reframes problematic practices as testable anti-patterns. These are analytical categories, not estimates of how often organizations use them.
 
-**Table 3. Failure-prone practices and defensible alternatives.**
+**Table 5. Failure-prone practices and defensible alternatives.**
 
 | Practice | Why it fails | Proposed alternative and necessary qualification |
 |:--|:--|:--|
@@ -220,29 +266,13 @@ For example: “Only the approved artifact can run in production” becomes a cl
 
 **Boundary E — runtime observation and reassessment.** Observe deployed digests, effective privileges, security-relevant configuration, and detection events. Reassess when a new vulnerability is disclosed, a credential is revoked, configuration drifts, or evidence becomes stale. Feed confirmed failures back into regression cases and policy maintenance.
 
-**Figure 1. Proposed flow of artifacts, evidence, and release decisions.**
+Figure 3 separates artifact production from the authority that evaluates evidence and authorizes release. Artifact identity binds the evidence bundle to the bytes being admitted. The runtime feedback path invalidates stale claims when new vulnerabilities, configuration changes, or credential events occur.
 
-```text
-Reviewed source and approved workflow
-                  |
-                  v
-Isolated build ------> Artifact identified by digest
-       |                           |
-       v                           v
-Tests, inventory, provenance --> Protected verification
-                                     |
-                                Policy decision
-                                     |
-                                     v
-                          Deploy the verified digest
-                                     |
-                                     v
-                       Observe live state and exposure
-                                     |
-                      Reassess, remediate, and learn
-```
+**Figure 3. Proposed architecture separating artifact production, evidence, and release authority.**
 
-The diagram is a proposed architecture. “Protected verification” is a requirement to establish in an implementation, not a property created by drawing the verifier as a separate box.
+![Artifact and evidence flows converge at a protected verifier, followed by deployment of the verified digest and runtime reassessment.](figures/figure_03_assurance_architecture.png){width=6.5in}
+
+The diagram is a proposed architecture, not a tested implementation. “Protected verification” requires independently controlled policy and authorization that survive the modeled build compromise. A separate box alone does not establish independence. The feedback arrow represents reassessment rather than automatic permission to deploy again.
 
 ### 6.3 Release policy and exception governance
 
@@ -264,7 +294,7 @@ Conflicting evidence also requires a decision rule. A passing IaC scan and a liv
 
 ### 6.5 Practical control mapping
 
-**Table 4. Illustrative mechanisms and the evidence they must produce.**
+**Table 6. Illustrative mechanisms and the evidence they must produce.**
 
 | Objective | Illustrative mechanism | Required evidence | Remaining uncertainty |
 |:--|:--|:--|:--|
@@ -286,6 +316,14 @@ The framework requires evaluation before effectiveness claims are warranted. A f
 
 Use versioned applications, dependency sets, infrastructure configurations, and delivery workflows. Include at least one setting with meaningful authenticated application behavior and one infrastructure deployment scenario. Match control configurations across conditions where possible, and preserve legitimate approvals and emergency needs. Never expose production systems or use real customer secrets for attack experiments.
 
+Figure 4 summarizes the proposed comparison. The same independently labeled scenario set is exercised in each condition; the outcome domains remain separate. The design tests whether additional verification and isolation change attack outcomes and operational cost, rather than assuming that the condition with more controls must perform better.
+
+**Figure 4. Proposed comparative evaluation of existing safeguards, added scanning, and continuous assurance.**
+
+![Three baseline conditions feed the same labeled scenario suite and are evaluated for detection, enforcement, containment, response, and operational cost.](figures/figure_04_evaluation_design.png){width=6.5in}
+
+This figure specifies a study to be conducted. It contains no measured performance values, and the framework's effectiveness remains unestablished. Existing safeguards in B0 must be preserved and documented to avoid an artificially weak comparator.
+
 ### 7.2 Threat-specific tests and independent ground truth
 
 Construct benign and malicious cases with an oracle independent of the evaluated scanner. Cases should include a seeded configuration weakness, an untrusted change attempting to access a canary credential, an altered artifact after scanning, missing or mismatched provenance, a scanner failure, a newly disclosed test advisory affecting a previously built artifact, and drift between approved and deployed state.
@@ -294,7 +332,7 @@ Each case needs a declared attack capability, precondition, expected observation
 
 ### 7.3 Outcome measures and denominators
 
-**Table 5. Proposed measures for evaluating assurance and operational cost.**
+**Table 7. Proposed measures for evaluating assurance and operational cost.**
 
 | Measure | Operational definition | Interpretation limit |
 |:--|:--|:--|

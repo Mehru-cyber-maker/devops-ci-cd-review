@@ -1,0 +1,10 @@
+# Preserve generated document and image bytes.
+*.pdf binary
+*.docx binary
+*.png binary
+*.zip binary
+
+# Keep editable text and vector exports consistent.
+*.md text eol=lf
+*.svg text eol=lf
+*.csv text eol=lf

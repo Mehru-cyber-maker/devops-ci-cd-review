@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="352.8pt" viewBox="0 0 518.4 352.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T07:30:40.527308</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 352.8
+L 518.4 352.8
+L 518.4 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 95.212364 196.341121
+Q 176.229052 214.385747 256.045318 232.163006
+" clip-path="url(#paca707009d)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 252.575788 229.34124
+L 256.045318 232.163006
+L 251.706187 233.245571
+z
+" clip-path="url(#paca707009d)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 259.2 197.904967
+Q 259.2 214.384537 259.2 229.63427
+" clip-path="url(#paca707009d)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 261.2 225.63427
+L 259.2 229.63427
+L 257.2 225.63427
+z
+" clip-path="url(#paca707009d)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 423.187636 196.341121
+Q 342.170948 214.385747 262.354682 232.163006
+" clip-path="url(#paca707009d)" style="fill: none; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 266.693813 233.245571
+L 262.354682 232.163006
+L 265.824212 229.34124
+z
+" clip-path="url(#paca707009d)" style="fill: #52616b; stroke: #52616b; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 20.850048 196.248528
+L 165.670272 196.248528
+Q 172.710144 196.248528 172.710144 191.457504
+L 172.710144 31.300416
+Q 172.710144 26.509392 165.670272 26.509392
+L 20.850048 26.509392
+Q 13.810176 26.509392 13.810176 31.300416
+L 13.810176 191.457504
+Q 13.810176 196.248528 20.850048 196.248528
+z
+" clip-path="url(#paca707009d)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 186.789888 196.248528
+L 331.610112 196.248528
+Q 338.649984 196.248528 338.649984 191.457504
+L 338.649984 31.300416
+Q 338.649984 26.509392 331.610112 26.509392
+L 186.789888 26.509392
+Q 179.750016 26.509392 179.750016 31.300416
+L 179.750016 191.457504
+Q 179.750016 196.248528 186.789888 196.248528
+z
+" clip-path="url(#paca707009d)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 352.729728 196.248528
+L 497.549952 196.248528
+Q 504.589824 196.248528 504.589824 191.457504
+L 504.589824 31.300416
+Q 504.589824 26.509392 497.549952 26.509392
+L 352.729728 26.509392
+Q 345.689856 26.509392 345.689856 31.300416
+L 345.689856 191.457504
+Q 345.689856 196.248528 352.729728 196.248528
+z
+" clip-path="url(#paca707009d)" style="fill: #eef4f8; stroke: #b5c9d8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 40.963968 295.491168
+L 477.436032 295.491168
+Q 484.475904 295.491168 484.475904 290.700144
+L 484.475904 236.630016
+Q 484.475904 231.838992 477.436032 231.838992
+L 40.963968 231.838992
+Q 33.924096 231.838992 33.924096 236.630016
+L 33.924096 290.700144
+Q 33.924096 295.491168 40.963968 295.491168
+z
+" clip-path="url(#paca707009d)" style="fill: #18354d; stroke: #18354d; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="331.169557" transform="rotate(-0 259.2 331.169557)">Conceptual synthesis · Selected evidence · No pooled effect estimate</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="93.26016" y="52.549215" transform="rotate(-0 93.26016 52.549215)">Academic studies</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(39.983535 84.147922)">Practitioner integration</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(41.14791 96.896607)">Historical IaC mapping</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(49.92241 109.645291)">IaC security smells</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(42.796722 122.393976)">Reconciliation defects</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(30.058316 135.14266)">Kubernetes detection limits</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="93.26016" y="183.657959" transform="rotate(-0 93.26016 183.657959)">Observation ≠ causal effect</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="259.2" y="52.549215" transform="rotate(-0 259.2 52.549215)">Specifications</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(201.260125 84.147922)">Application requirements</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(219.105969 96.896607)">Build provenance</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(189.811875 109.645291)">Authorized supply-chain steps</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(201.674125 122.393976)">Dependency governance</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="259.2" y="183.657959" transform="rotate(-0 259.2 183.657959)">Requirement ≠ measured benefit</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18354d" x="425.13984" y="52.549215" transform="rotate(-0 425.13984 52.549215)">Incident evidence</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(361.293996 84.147922)">Compromised build process</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(369.047152 96.896607)">Overprivileged CI helper</text>
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; fill: #18354d" transform="translate(361.66559 109.645291)">Vulnerable deployed library</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="425.13984" y="183.657959" transform="rotate(-0 425.13984 183.657959)">Case ≠ incidence estimate</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="259.2" y="257.574878" transform="rotate(-0 259.2 257.574878)">Synthesis: adoption → detection → verification → reassessment</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="259.2" y="280.770154" transform="rotate(-0 259.2 280.770154)">Does the release decision have applicable, trustworthy evidence?</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="paca707009d">
+   <rect x="7.776" y="5.292" width="502.848" height="342.216"/>
+  </clipPath>
+ </defs>
+</svg>

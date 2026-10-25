@@ -1,0 +1,5 @@
+metric,dataset,configuration_files,detector_configuration,reported_value
+individual_tool_precision_maximum,proprietary,188,best_individual_tool,0.41
+individual_tool_precision_maximum,open_source,356,best_individual_tool,0.43
+combined_tool_recall,proprietary,188,all_five_tools,0.53
+combined_tool_recall,open_source,356,all_five_tools,0.65
